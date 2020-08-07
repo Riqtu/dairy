@@ -2,6 +2,8 @@ import styled from '@emotion/styled'
 
 export const LogoWrapper = styled.div`
   position: relative;
+  min-height: 70vh;
+  overflow: hidden;
 `
 export const FirstLayer = styled.img`
   position: relative;
@@ -44,16 +46,30 @@ export const ImageLayer = styled.img`
   left: calc(50% - 100px);
   width: 250px;
   opacity: 0;
-  transform: rotate3d(1, 0, 0, 180deg);
-  animation: 1s 0.4s rotateImg ease forwards;
-  @keyframes rotateImg {
+  animation: 1s 0.4s rotateImageLayer ease forwards,
+    10s 1.5s waveImageLayer ease infinite;
+  @keyframes rotateImageLayer {
     0% {
       opacity: 0;
-      transform: rotateX(20deg) translateX(50%);
+      transform: rotate(20deg) translateX(50%);
     }
     100% {
       opacity: 1;
-      transform: rotate3d(1, 0, 0, 0deg) translateX(0px);
+      transform: rotate(0deg) translateX(0px);
+    }
+  }
+  @keyframes waveImageLayer {
+    0% {
+      transform: rotate(0deg) translateX(0);
+    }
+    25% {
+      transform: rotate(6deg);
+    }
+    75% {
+      transform: rotate(-6deg);
+    }
+    100% {
+      transform: rotate(0deg) translateX(-);
     }
   }
 `
