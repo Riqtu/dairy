@@ -9,7 +9,7 @@ const Group = (props) => {
       <Slide duration={2000} left>
         <GroupBlock back={0}></GroupBlock>
       </Slide>
-      <Zoom duration={2000} top>
+      <Zoom duration={2000}>
         <GroupBlock back={1}></GroupBlock>
       </Zoom>
       <Slide duration={2000} right>

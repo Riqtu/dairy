@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 import logoCircle from './../../assets/logo-circle.png'
 
-export const HeaderWrapper = styled.div`
+export const HeaderWrapper = styled.header`
   position: relative;
   height: 200px;
   width: 100%;
@@ -16,6 +16,8 @@ export const HeaderWrapper = styled.div`
       opacity: 1;
     }
   }
+
+  z-index: 6 !important;
 `
 export const Links = styled.ul`
   position: absolute;
@@ -33,9 +35,13 @@ export const Links = styled.ul`
       font-size: 0.9rem;
     }
   }
+  @media screen and (max-width: 700px) {
+    left: 0;
+    top: 20px;
+  }
 `
 export const MenuButton = styled.button`
-  position: absolute;
+  position: ${(props) => (props.active ? 'fixed' : 'absolute')};
   cursor: pointer;
   width: 68px;
   height: 66px;
@@ -49,7 +55,13 @@ export const MenuButton = styled.button`
   background-position: center;
   transition: 0.3s;
   outline: none;
+  z-index: 7 !important;
   &:hover{
       transform: scale(1.2) rotate(20deg)
+  }
+  @media screen and (max-width: 700px) {
+    /* left: 0; */
+    top: 40px;
+    right: 50px;
   }
 `

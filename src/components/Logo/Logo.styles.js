@@ -4,6 +4,10 @@ export const LogoWrapper = styled.div`
   position: relative;
   min-height: 70vh;
   overflow: hidden;
+
+  @media screen and (max-width: 700px) {
+    min-height: 20vh;
+  }
 `
 export const FirstLayer = styled.img`
   position: relative;
@@ -48,6 +52,11 @@ export const ImageLayer = styled.img`
   opacity: 0;
   animation: 1s 0.4s rotateImageLayer ease forwards,
     10s 1.5s waveImageLayer ease infinite;
+  @media screen and (max-width: 700px) {
+    top: 20px;
+    left: calc(50% - 35px);
+    width: 70px;
+  }
   @keyframes rotateImageLayer {
     0% {
       opacity: 0;

@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HeaderWrapper, Links, MenuButton } from './Header.styles'
 
 import { Link } from 'react-router-dom'
+import Menu from '../Menu/Menu'
 
 const Header = (props) => {
+  const [active, setActive] = useState(false)
   return (
     <HeaderWrapper>
-      <Links>
+      <Links active={props.active}>
         <li>
           <Link to="/restaurant">Ресторан</Link>
         </li>
@@ -20,7 +22,11 @@ const Header = (props) => {
           <Link to="/restaurant">Мастерклассы</Link>
         </li>
       </Links>
-      <MenuButton></MenuButton>
+      <MenuButton
+        onClick={() => setActive(!active)}
+        active={active}
+      ></MenuButton>
+      <Menu active={active}></Menu>
     </HeaderWrapper>
   )
 }

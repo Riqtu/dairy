@@ -12,9 +12,13 @@ export const GroupWrapper = styled.div`
   position: relative;
   width: 90%;
   left: 6%;
-  top: 250px;
+  margin-top: 250px;
   min-height: 100px;
   height: 520px;
+  @media screen and (max-width: 700px) {
+    width: 90%;
+    left: 5%;
+  }
 `
 export const GroupBlock = styled.div`
   position: relative;
@@ -27,6 +31,11 @@ export const GroupBlock = styled.div`
   background-position: center;
   animation: ${(props) => Math.random() * (6 - 4) + 4}s
     ${(props) => Math.random() * props.back}s scaleBacks ease infinite;
+  @media screen and (max-width: 700px) {
+    width: 50%;
+    height: 120px;
+    background-size: contain;
+  }
   @keyframes scaleBacks {
     0% {
       transform: scale(1);
