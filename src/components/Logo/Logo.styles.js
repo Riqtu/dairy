@@ -50,8 +50,14 @@ export const ImageLayer = styled.img`
   left: calc(50% - 100px);
   width: 250px;
   opacity: 0;
-  animation: 1s 0.4s rotateImageLayer ease forwards,
-    10s 1.5s waveImageLayer ease infinite;
+  animation: ${(props) =>
+      props.rotate
+        ? ' 1.2s 0.7s rotateImageLayer ease forwards '
+        : ' 1.5s 1s rotateImageLayer ease forwards '},
+    ${(props) =>
+      props.rotate
+        ? '10s 1.5s waveImageLayer ease infinite alternate'
+        : '10s 5s waveImageLayer ease infinite alternate'};
   @media screen and (max-width: 700px) {
     top: 20px;
     left: calc(50% - 35px);
@@ -60,25 +66,23 @@ export const ImageLayer = styled.img`
   @keyframes rotateImageLayer {
     0% {
       opacity: 0;
-      transform: rotate(20deg) translateX(50%);
     }
     100% {
       opacity: 1;
-      transform: rotate(0deg) translateX(0px);
     }
   }
   @keyframes waveImageLayer {
     0% {
       transform: rotate(0deg) translateX(0);
     }
-    25% {
+    50% {
       transform: rotate(6deg);
     }
-    75% {
+    100% {
       transform: rotate(-6deg);
     }
-    100% {
+    /* 100% {
       transform: rotate(0deg) translateX(-);
-    }
+    } */
   }
 `

@@ -3,7 +3,6 @@ import './App.css'
 import { Main, Production } from './pages'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Menu from './components/Menu/Menu'
 
 function App() {
   const [active, setActive] = useState(false)

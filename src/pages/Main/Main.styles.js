@@ -94,19 +94,24 @@ export const Contact = styled.div`
   margin-top: 120px;
   margin-bottom: 200px;
 
-  left: 30%;
-  width: 40%;
+  left: 15%;
+  width: 60%;
   min-width: 100px;
   min-height: 100px;
 
   line-height: 1.2;
+
   p {
     font-size: 10pt;
     margin-bottom: 120px;
+    margin-top: 30px;
+    float: left;
+    margin-right: 20%;
   }
   h1 {
     font-size: 40pt;
     font-family: 'Uberschrift';
+    font-weight: lighter;
   }
   a {
     color: black;

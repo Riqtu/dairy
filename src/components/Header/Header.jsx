@@ -3,6 +3,7 @@ import { HeaderWrapper, Links, MenuButton } from './Header.styles'
 
 import { Link } from 'react-router-dom'
 import Menu from '../Menu/Menu'
+import DelayLink from '../DelayLink/DelayLink'
 
 const Header = (props) => {
   const [active, setActive] = useState(false)
@@ -13,7 +14,13 @@ const Header = (props) => {
           <Link to="/restaurant">Ресторан</Link>
         </li>
         <li>
-          <Link to="/restaurant">Производство</Link>
+          <DelayLink to="/restaurant" delay={3000}>
+            {' '}
+            Производство
+          </DelayLink>
+          {/* <Link to="/restaurant" delay={3000}>
+            Производство
+          </Link> */}
         </li>
         <li>
           <Link to="/restaurant">Подарочные наборы</Link>

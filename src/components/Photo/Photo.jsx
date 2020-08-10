@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   PhotoWrapper,
   Logo,
@@ -6,6 +6,8 @@ import {
   Layer,
   Date,
   Button,
+  LayerWrapper,
+  EmptyLayer,
 } from './Photo.styles'
 
 import logo from './../../assets/pectopah.svg'
@@ -21,18 +23,82 @@ import arrow from './../../assets/Arrow.svg'
 import arrowPrev from './../../assets/Arrow2.svg'
 
 import Fade from 'react-reveal/Fade'
+import Slider from 'react-slick'
+
+function SampleNextArrow(props) {
+  const { onClick } = props
+  return (
+    <Button onClick={onClick}>
+      <img src={arrow} alt="" />
+    </Button>
+  )
+}
+function SamplePrevArrow(props) {
+  const { onClick } = props
+  return (
+    <Button onClick={onClick} prev>
+      <img src={arrowPrev} alt="" />
+    </Button>
+  )
+}
+
 const Photo = (props) => {
-  const [el, setEl] = useState({ p: true, arr: [rest3, rest2, rest1] })
-  const [active, setActive] = useState(false)
-  const test = () => {
-    setActive(true)
-    setTimeout(() => {
-      el.p
-        ? setEl({ p: false, arr: [rest4, rest5, rest6] })
-        : setEl({ p: true, arr: [rest3, rest2, rest1] })
-      setActive(false)
-    }, 900)
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+    // adaptiveHeight: true,
   }
+
+  const arr = [
+    {
+      img: rest1,
+      top: 10,
+    },
+    {
+      img: rest2,
+      top: -30,
+    },
+    {
+      img: rest3,
+      top: 20,
+    },
+    {
+      img: rest4,
+      top: 10,
+    },
+    {
+      img: rest5,
+      top: -30,
+    },
+    {
+      img: rest6,
+      top: 20,
+    },
+  ]
+  const layers = arr.map((el, index) => {
+    return (
+      <LayerWrapper
+        duration={Math.random() * (4 - 2) + 2}
+        delay={Math.floor(Math.random() * 1)}
+        opacity={index % 2 !== 0 ? '0.75' : '1'}
+      >
+        <Layer src={el.img} alt="" top={el.top}></Layer>
+      </LayerWrapper>
+    )
+  })
   return (
     <PhotoWrapper>
       <Fade bottom cascade>
@@ -42,17 +108,12 @@ const Photo = (props) => {
         </Logo>
       </Fade>
       <Fade bottom>
-        <Container flash={active}>
-          <Date src={date} alt=""></Date>
-          <Layer src={el.arr[0]} alt="" top={30}></Layer>
-          <Layer src={el.arr[1]} alt="" top={-30}></Layer>
-          <Layer src={el.arr[2]} alt="" top={70}></Layer>
-          <Button onClick={test} prev>
-            <img src={arrowPrev} alt="" />
-          </Button>
-          <Button onClick={test}>
-            <img src={arrow} alt="" />
-          </Button>
+        <Container>
+          <Date src={date} alt="" id="date"></Date>
+          <Slider {...settings}>
+            {window.innerWidth > 700 ? <EmptyLayer></EmptyLayer> : ''}
+            {layers}
+          </Slider>
         </Container>
       </Fade>
     </PhotoWrapper>

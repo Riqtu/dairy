@@ -11,8 +11,6 @@ import { Logo, Header } from '../../components'
 import Slider from 'react-slick'
 import Fade from 'react-reveal/Fade'
 
-// import '~slick-carousel/slick/slick.css'
-// import '~slick-carousel/slick/slick-theme.css'
 import rest from './../../assets/sld1.png'
 import rest1 from './../../assets/rest1.png'
 import vlas from './../../assets/vlas.svg'
@@ -28,7 +26,7 @@ function SampleNextArrow(props) {
   )
 }
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props
+  const { onClick } = props
   return (
     <PrevArrow onClick={onClick}>
       <img src={arrow} alt="" />
