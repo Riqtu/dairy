@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { Main, Production, Contacts } from './pages'
+import { Main, Production, Contacts, Master } from './pages'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useStores } from './hooks/useStores'
@@ -21,8 +21,11 @@ function App() {
           <Route exact path="/">
             <Main setActive={setActive} active={active} />
           </Route>
-          <Route exact path="/restaurant">
+          <Route exact path="/production">
             <Production></Production>
+          </Route>
+          <Route exact path="/master-class">
+            <Master></Master>
           </Route>
           <Route exact path="/contacts">
             <Contacts></Contacts>

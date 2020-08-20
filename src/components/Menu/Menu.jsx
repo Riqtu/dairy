@@ -40,28 +40,28 @@ const Menu = observer((props) => {
           </DelayLink>
         </li>
         <li>
-          <DelayLink to="/restaurant" delay={500}>
+          <DelayLink to="/production" delay={500}>
             <Img
               src={production}
-              onClick={() => checkHref('/restaurant')}
+              onClick={() => checkHref('/production')}
               delay={2}
               duration={3}
               alt=""
               margin={40}
-              disable={mainStore.href === '/restaurant'}
+              disable={mainStore.href === '/production'}
             />
           </DelayLink>
         </li>
         <li>
-          <DelayLink to="/restaurant" delay={500}>
+          <DelayLink to="/master-class" delay={500}>
             <Img
               src={master}
-              onClick={() => checkHref('/restaurant')}
+              onClick={() => checkHref('/master-class')}
               delay={1}
               duration={5}
               alt=""
               margin={20}
-              disable={mainStore.href === '/restaurant'}
+              disable={mainStore.href === '/master-class'}
             />
           </DelayLink>
         </li>

@@ -3,7 +3,8 @@ import styled from '@emotion/styled'
 export const MasterFormWrapper = styled.div`
   position: relative;
   overflow: hidden;
-  margin-top: 50px;
+  padding-top: 50px;
+  background-color: #f1f0ed;
 `
 
 export const Form = styled.form`

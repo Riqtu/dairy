@@ -4,7 +4,7 @@ export const LogoWrapper = styled.div`
   position: relative;
   min-height: 70vh;
   overflow: hidden;
-
+  filter: invert(${(props) => (props.invert ? '1' : '0')});
   @media screen and (max-width: 700px) {
     min-height: 20vh;
   }

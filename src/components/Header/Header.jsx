@@ -15,8 +15,8 @@ const Header = observer((props) => {
           <li onClick={() => mainStore.setHref('/')}>
             <DelayLink to="/">Ресторан</DelayLink>
           </li>
-          <li onClick={() => mainStore.setHref('/restaurant')}>
-            <DelayLink to="/restaurant" id="qwe">
+          <li onClick={() => mainStore.setHref('/production')}>
+            <DelayLink to="/production" id="qwe">
               Производство
             </DelayLink>
           </li>
@@ -24,7 +24,7 @@ const Header = observer((props) => {
             <Link to="/restaurant">Подарочные наборы</Link>
           </li>
           <li>
-            <Link to="/restaurant">Мастерклассы</Link>
+            <Link to="/master-class">Мастерклассы</Link>
           </li>
         </Links>
       </HeaderWrapper>
