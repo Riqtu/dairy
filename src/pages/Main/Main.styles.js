@@ -3,6 +3,7 @@ import logoCircle from './../../assets/logo-circle.png'
 
 export const MainWrapper = styled.div`
   font-family: 'Open Sans';
+  opacity: ${(props) => (props.redirect ? '0' : '1')};
 `
 export const AboutWrapper = styled.div`
   position: relative;

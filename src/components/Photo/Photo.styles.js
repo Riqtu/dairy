@@ -61,7 +61,7 @@ export const LayerWrapper = styled.div`
   position: relative;
   z-index: 4;
   opacity: ${(props) => props.opacity};
-  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}
+  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
   @keyframes topWaveImg {
     0% {
@@ -96,7 +96,7 @@ export const Date = styled.img`
   position: absolute;
   width: 350px;
   top: auto;
-  left: calc(100% - (400px * 3) + 70px);
+  left: 21.5%;
   bottom: 50px;
   /* margin-top: 50px; */
 `

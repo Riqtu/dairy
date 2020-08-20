@@ -8,6 +8,7 @@ export const HeaderWrapper = styled.header`
   width: 100%;
   font-family: 'Open Sans';
   animation: 2s flash ease forwards;
+  filter: invert(${(props) => (props.invert ? '1' : '0')});
   @keyframes flash {
     0% {
       opacity: 0;
@@ -42,6 +43,8 @@ export const Links = styled.ul`
 `
 export const MenuButton = styled.button`
   position: ${(props) => (props.active ? 'fixed' : 'absolute')};
+  filter: invert(${(props) => (props.invert ? '1' : '0')});
+
   cursor: pointer;
   width: 68px;
   height: 66px;
@@ -55,10 +58,11 @@ export const MenuButton = styled.button`
   background-position: center;
   transition: 0.3s;
   outline: none;
-  z-index: 7 !important;
+  z-index: 8 !important;
   &:hover{
       transform: scale(1.2) rotate(20deg)
   }
+  
   @media screen and (max-width: 700px) {
     /* left: 0; */
     top: 40px;

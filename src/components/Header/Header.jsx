@@ -1,41 +1,44 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { HeaderWrapper, Links, MenuButton } from './Header.styles'
 
 import { Link } from 'react-router-dom'
 import Menu from '../Menu/Menu'
 import DelayLink from '../DelayLink/DelayLink'
-
-const Header = (props) => {
-  const [active, setActive] = useState(false)
+import { useStores } from './../../hooks/useStores'
+import { observer } from 'mobx-react'
+const Header = observer((props) => {
+  const { mainStore } = useStores()
   return (
-    <HeaderWrapper>
-      <Links active={props.active}>
-        <li>
-          <Link to="/restaurant">Ресторан</Link>
-        </li>
-        <li>
-          <DelayLink to="/restaurant" delay={3000}>
-            {' '}
-            Производство
-          </DelayLink>
-          {/* <Link to="/restaurant" delay={3000}>
-            Производство
-          </Link> */}
-        </li>
-        <li>
-          <Link to="/restaurant">Подарочные наборы</Link>
-        </li>
-        <li>
-          <Link to="/restaurant">Мастерклассы</Link>
-        </li>
-      </Links>
+    <div>
+      <HeaderWrapper invert={props.invert}>
+        <Links active={props.active}>
+          <li onClick={() => mainStore.setHref('/')}>
+            <DelayLink to="/">Ресторан</DelayLink>
+          </li>
+          <li onClick={() => mainStore.setHref('/restaurant')}>
+            <DelayLink to="/restaurant" id="qwe">
+              Производство
+            </DelayLink>
+          </li>
+          <li>
+            <Link to="/restaurant">Подарочные наборы</Link>
+          </li>
+          <li>
+            <Link to="/restaurant">Мастерклассы</Link>
+          </li>
+        </Links>
+      </HeaderWrapper>
       <MenuButton
-        onClick={() => setActive(!active)}
-        active={active}
+        invert={props.invert}
+        onClick={() => {
+          mainStore.setMenuActive(!mainStore.menuActive)
+          console.log(mainStore.menuActive)
+        }}
+        active={mainStore.menuActive}
       ></MenuButton>
-      <Menu active={active}></Menu>
-    </HeaderWrapper>
+      <Menu></Menu>
+    </div>
   )
-}
+})
 
 export default Header

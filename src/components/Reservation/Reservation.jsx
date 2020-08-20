@@ -66,7 +66,7 @@ const Reservation = (props) => {
               <DateInput disableUnderline />
             </InputMask>
           </Date>
-          <Name>
+          <Name len={name.length}>
             <label>Имя</label>
             <NameInput
               type="text"
@@ -76,15 +76,16 @@ const Reservation = (props) => {
                 setName(e.target.value)
               }}
               disableUnderline
+              len={name.length}
             />
           </Name>
           <Phone>
             <label>Телефон</label>
             <InputMask
-              mask="+7(999)999-99-99"
+              mask="+7 (999) 999-99-99"
               type="text"
-              placeholder="+7(999)999-99-99"
-              maskPlaceholder="+7(999)999-99-99"
+              placeholder="+7 (999) 999-99-99"
+              maskPlaceholder="+7 (999) 999-99-99"
               value={phone}
               onChange={(e) => {
                 setPhone(e.target.value)

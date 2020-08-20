@@ -18,6 +18,7 @@ export const GroupWrapper = styled.div`
   @media screen and (max-width: 700px) {
     width: 90%;
     left: 5%;
+    overflow-x: hidden;
   }
 `
 export const GroupBlock = styled.div`

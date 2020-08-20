@@ -15,7 +15,7 @@ export const FirstLayer = styled.img`
   margin-left: 5%;
   float: none;
   z-index: 2;
-  animation: 2s rotate ease forwards;
+  ${(props) => props.isLoaded && 'animation: 2s rotate ease forwards'};
   @keyframes rotate {
     0% {
       opacity: 0;
@@ -31,7 +31,7 @@ export const FirstLayer = styled.img`
 export const SecondLayer = styled.img`
   width: 102%;
   margin-top: 30px;
-  animation: 2s rotateSec ease forwards;
+  ${(props) => props.isLoaded && 'animation: 2s rotateSec ease forwards'};
   @keyframes rotateSec {
     0% {
       opacity: 0;
@@ -51,13 +51,13 @@ export const ImageLayer = styled.img`
   width: 250px;
   opacity: 0;
   animation: ${(props) =>
-      props.rotate
-        ? ' 1.2s 0.7s rotateImageLayer ease forwards '
-        : ' 1.5s 1s rotateImageLayer ease forwards '},
+      props.isLoaded &&
+      (props.rot
+        ? ' 1.2s 1s rotateImageLayer ease forwards '
+        : ' 1.2s 0.5s rotateImageLayer ease forwards ')},
     ${(props) =>
-      props.rotate
-        ? '10s 1.5s waveImageLayer ease infinite alternate'
-        : '10s 5s waveImageLayer ease infinite alternate'};
+      props.isLoaded &&
+      (props.rot ? 'none' : '10s  waveImageLayer ease infinite alternate')};
   @media screen and (max-width: 700px) {
     top: 20px;
     left: calc(50% - 35px);
@@ -66,14 +66,16 @@ export const ImageLayer = styled.img`
   @keyframes rotateImageLayer {
     0% {
       opacity: 0;
+      transform: translateY(20px);
     }
     100% {
       opacity: 1;
+      transform: translateY(0px);
     }
   }
   @keyframes waveImageLayer {
     0% {
-      transform: rotate(0deg) translateX(0);
+      transform: rotate(2deg) translateX(0);
     }
     50% {
       transform: rotate(6deg);

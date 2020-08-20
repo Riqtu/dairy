@@ -45,7 +45,7 @@ function SamplePrevArrow(props) {
 const Photo = (props) => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 4,
     nextArrow: <SampleNextArrow />,
@@ -91,6 +91,7 @@ const Photo = (props) => {
   const layers = arr.map((el, index) => {
     return (
       <LayerWrapper
+        key={index}
         duration={Math.random() * (4 - 2) + 2}
         delay={Math.floor(Math.random() * 1)}
         opacity={index % 2 !== 0 ? '0.75' : '1'}
