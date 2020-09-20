@@ -21,7 +21,7 @@ const Header = observer((props) => {
             </DelayLink>
           </li>
           <li>
-            <Link to="/restaurant">Подарочные наборы</Link>
+            <Link to="/boxes">Подарочные наборы</Link>
           </li>
           <li>
             <Link to="/master-class">Мастерклассы</Link>

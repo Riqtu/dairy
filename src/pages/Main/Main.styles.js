@@ -24,7 +24,8 @@ export const AboutText = styled.p`
     width: 70%;
     font-size: 10pt;
     margin-left: 15%;
-    margin-top: 40px;
+    margin-top: 50px;
+    top: 20px;
   }
 `
 export const AboutLine = styled.div`
@@ -49,21 +50,20 @@ export const AboutLogo = styled.div`
   background-image: url('${logoCircle}');
   background-size: contain;
   background-position: center;
-    transform: scale(1.2) rotate(20deg);
-    animation: 10s  rotateImg linear infinite;
-    @media screen and (max-width: 700px) {
-      top: 60%;
-      right: 30%;
+  transform: scale(1.2) rotate(20deg);
+  animation: 10s rotateImg linear infinite;
+  @media screen and (max-width: 700px) {
+    top: 65%;
+    right: 30%;
   }
-    @keyframes rotateImg {
-        0% {
-        transform: rotate(360deg);
-        }
-        100% {
-        transform: rotate(0);
-        }
+  @keyframes rotateImg {
+    0% {
+      transform: rotate(360deg);
     }
-  
+    100% {
+      transform: rotate(0);
+    }
+  }
 `
 
 export const SecondAboutWrapper = styled.div`
@@ -71,7 +71,7 @@ export const SecondAboutWrapper = styled.div`
   width: 100%;
   height: 300px;
   /* top: 400px; */
-  margin-top: 150px;
+  margin-top: 0px;
   padding: 40px;
   float: none;
   @media screen and (max-width: 700px) {
@@ -95,8 +95,8 @@ export const Contact = styled.div`
   margin-top: 120px;
   margin-bottom: 200px;
 
-  left: 15%;
-  width: 60%;
+  /* left: 15%;  */
+  width: 100%;
   min-width: 100px;
   min-height: 100px;
 
@@ -118,6 +118,14 @@ export const Contact = styled.div`
     color: black;
     text-decoration: none;
   }
+  img {
+    width: 40%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: -100px;
+
+    float: left;
+  }
   @media screen and (max-width: 700px) {
     width: 80%;
     left: 10%;
@@ -134,6 +142,7 @@ export const Footer = styled.footer`
   border-top: 1px solid black;
   margin-left: 5%;
   opacity: 0.5;
+  overflow: hidden;
   p {
     margin: 20px 70px;
   }

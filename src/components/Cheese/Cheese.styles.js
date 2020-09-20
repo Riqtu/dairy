@@ -5,6 +5,10 @@ export const CheeseWrapper = styled.div`
   width: 60%;
   left: 25%;
   margin-top: 230px;
+  @media screen and (max-width: 700px) {
+    width: 90%;
+    left: 5%;
+  }
 `
 export const Line = styled.img`
   position: absolute;
@@ -15,12 +19,18 @@ export const FirstBlock = styled.div`
   position: relative;
   width: 40%;
   z-index: 2;
+  /* @media screen and (max-width: 700px) {
+    width: 90%;
+  } */
 `
 export const FirstBlockLogo = styled.img`
   position: absolute;
   width: 70%;
   left: 30%;
   top: 10%;
+  /* @media screen and (max-width: 700px) {
+    left: 5%;
+  } */
 `
 export const FirstBlockNumber = styled.img`
   position: absolute;
@@ -129,12 +139,18 @@ export const FourBlockNumber = styled.img`
   left: 85%;
   top: 46%;
   width: 40%;
+  @media screen and (max-width: 700px) {
+    left: 0;
+  }
 `
 export const FourBlockImg = styled.img`
   position: relative;
   width: 80%;
   left: 20%;
   mix-blend-mode: darken;
+  @media screen and (max-width: 700px) {
+    left: 60%;
+  }
 `
 export const FourBlockText = styled.p`
   position: absolute;
@@ -143,4 +159,8 @@ export const FourBlockText = styled.p`
   width: 40%;
   font-size: 13pt;
   color: #828282;
+  @media screen and (max-width: 700px) {
+    left: 0;
+    font-size: 10pt;
+  }
 `

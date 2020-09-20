@@ -46,6 +46,9 @@ export const Time = styled.div`
   @media screen and (max-width: 700px) {
     width: 80%;
     height: 150px;
+    label {
+      top: 50%;
+    }
   }
 `
 export const TimeInput = styled.input`
@@ -82,8 +85,9 @@ export const Line = styled.div`
   float: left;
   @media screen and (max-width: 700px) {
     margin-top: 130px;
-    height: 3px;
+    height: 0px;
     background-color: transparent;
+    /* display: none; */
   }
 `
 export const Date = styled.div`
@@ -105,6 +109,7 @@ export const Date = styled.div`
     width: 80%;
     margin-left: 10%;
     height: 90px;
+    top: 0;
   }
 `
 export const DateInput = styled.input`
@@ -152,9 +157,19 @@ export const Name = styled.div`
     }
   }
   @media screen and (max-width: 700px) {
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
-    height: 80px;
+    height: 90px;
+    top: 0;
+    position: relative;
+    margin-top: 80px;
+    label {
+      line-height: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 `
 
@@ -176,10 +191,12 @@ export const NameInput = styled.input`
   line-height: normal;
 
   @media screen and (max-width: 700px) {
-    margin-left: 50px;
+    margin-left: 0;
+    margin-top: -20px;
+    padding-left: 20px;
     font-size: 60pt;
-    line-height: normal;
     height: auto;
+    line-height: normal;
   }
 `
 
@@ -205,11 +222,19 @@ export const Phone = styled.div`
     }
   }
   @media screen and (max-width: 700px) {
-    width: 56%;
+    width: 80%;
     margin-left: 10%;
-    margin-top: 20%;
-
-    height: 150px;
+    height: 90px;
+    top: 0;
+    position: relative;
+    margin-top: 80px;
+    label {
+      line-height: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 `
 
@@ -232,10 +257,13 @@ export const PhoneInput = styled.input`
   line-height: normal;
 
   @media screen and (max-width: 700px) {
-    margin-left: 100px;
-    font-size: 23pt;
-    line-height: normal;
+    margin-left: 0;
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 60pt;
     height: auto;
+    line-height: normal;
+    font-size: 30pt;
   }
 `
 
@@ -259,6 +287,6 @@ export const Submit = styled.button`
       width: 200px;
     }
     left: calc(50% - 100px);
-    margin-top: 0px;
+    margin-top: 50px;
   }
 `

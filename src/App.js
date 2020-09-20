@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import { Main, Production, Contacts, Master } from './pages'
+import { Main, Production, Contacts, Master, Boxes } from './pages'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useStores } from './hooks/useStores'
@@ -23,6 +23,9 @@ function App() {
           </Route>
           <Route exact path="/production">
             <Production></Production>
+          </Route>
+          <Route exact path="/boxes">
+            <Boxes></Boxes>
           </Route>
           <Route exact path="/master-class">
             <Master></Master>

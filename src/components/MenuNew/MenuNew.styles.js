@@ -1,18 +1,19 @@
 import styled from '@emotion/styled'
 
-export const MenuWrapper = styled.div`
-  position: fixed;
+export const MenuNewWrapper = styled.div`
+  position: relative;
   width: 100vw;
   display: block;
-  height: 100vh;
-  background: linear-gradient(0deg, #f1f0ed 50%, rgba(255, 255, 255, 0) 100%);
+  /* height: 20vh; */
+  /* background: linear-gradient(0deg, #f1f0ed 50%, rgba(255, 255, 255, 0) 100%); */
   transform: translateY(${(props) => (props.active ? '-50%' : '100%')});
   /* visibility: ${(props) => (props.visible ? 'visible' : 'hidden')}; */
   transition: 1.3s;
   top: 0;
   left: 0;
   z-index: 7 !important;
-  padding-top: 100vh;
+  margin-top: 300px;
+  /* padding-top: 40vh; */
 `
 export const Links = styled.ul`
   list-style-type: none;
@@ -21,7 +22,7 @@ export const Links = styled.ul`
   opacity: ${(props) => (props.active ? '1' : '0')};
 `
 export const Img = styled.img`
-  width: 50%;
+  width: ${(props) => (props.width ? props.width : 50)}%;
   position: relative;
   margin-left: ${(props) => props.margin}%;
   margin-top: 50px;
@@ -34,10 +35,10 @@ export const Img = styled.img`
   }
 `
 export const ImgLast = styled.img`
-  width: 30%;
+  width: ${(props) => (props.width ? props.width : 30)}%;
   position: relative;
   margin-left: ${(props) => props.margin}%;
-  margin-top: 50px;
+  margin-top: ${(props) => (props.top ? props.top + '%' : '50px')};
   animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
   transition: 0.3s;
@@ -46,4 +47,26 @@ export const ImgLast = styled.img`
   &:hover {
     filter: invert(${(props) => (props.disable ? '0%' : '50%')});
   }
+`
+
+export const Fork = styled.img`
+  width: 40%;
+  top: -20%;
+  position: absolute;
+  margin-left: 0;
+  margin-top: 0;
+  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
+    ease infinite alternate;
+  transition: 0.3s;
+`
+
+export const Cheese = styled.img`
+  width: 35%;
+  top: 0;
+  left: auto;
+  right: 10%;
+  position: absolute;
+  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
+    ease infinite alternate;
+  transition: 0.3s;
 `

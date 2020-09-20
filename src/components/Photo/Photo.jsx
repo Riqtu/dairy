@@ -18,12 +18,13 @@ import rest4 from './../../assets/rest4.png'
 import rest5 from './../../assets/rest5.png'
 import rest6 from './../../assets/rest6.png'
 
-import date from './../../assets/2020.svg'
+import date from './../../assets/date.svg'
 import arrow from './../../assets/Arrow.svg'
 import arrowPrev from './../../assets/Arrow2.svg'
 
 import Fade from 'react-reveal/Fade'
 import Slider from 'react-slick'
+import { useState } from 'react'
 
 function SampleNextArrow(props) {
   const { onClick } = props
@@ -43,9 +44,10 @@ function SamplePrevArrow(props) {
 }
 
 const Photo = (props) => {
+  const [swiped, setSwiped] = useState()
   const settings = {
     infinite: true,
-    speed: 1000,
+    speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 4,
     nextArrow: <SampleNextArrow />,
@@ -95,6 +97,7 @@ const Photo = (props) => {
         duration={Math.random() * (4 - 2) + 2}
         delay={Math.floor(Math.random() * 1)}
         opacity={index % 2 !== 0 ? '0.75' : '1'}
+        swiped={swiped}
       >
         <Layer src={el.img} alt="" top={el.top}></Layer>
       </LayerWrapper>
@@ -111,7 +114,11 @@ const Photo = (props) => {
       <Fade bottom>
         <Container>
           <Date src={date} alt="" id="date"></Date>
-          <Slider {...settings}>
+          <Slider
+            {...settings}
+            beforeChange={() => setSwiped(true)}
+            afterChange={() => setSwiped(false)}
+          >
             {window.innerWidth > 700 ? <EmptyLayer></EmptyLayer> : ''}
             {layers}
           </Slider>

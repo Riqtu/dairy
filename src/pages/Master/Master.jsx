@@ -29,6 +29,7 @@ const Master = (props) => {
           muted="1"
           autoPlay={true}
           poster="video/plane.jpg"
+          playsInline
         >
           <source src={video} type="video/mp4" />
         </BackgroundVideo>

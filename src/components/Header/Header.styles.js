@@ -7,6 +7,7 @@ export const HeaderWrapper = styled.header`
   height: 200px;
   width: 100%;
   font-family: 'Open Sans';
+  z-index: 6;
   animation: 2s flash ease forwards;
   filter: invert(${(props) => (props.invert ? '1' : '0')});
   @keyframes flash {

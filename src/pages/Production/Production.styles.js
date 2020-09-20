@@ -3,6 +3,7 @@ import logoCircle from './../../assets/logo-circle.png'
 
 export const ProductionWrapper = styled.div`
   padding-bottom: 50px;
+  overflow-x: hidden;
 `
 
 export const SliderWrapper = styled.div`
@@ -11,12 +12,18 @@ export const SliderWrapper = styled.div`
   max-width: 1100px;
   left: 10%;
   margin-left: 0;
-  margin-top: 60px;
+  margin-top: 120px;
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
 `
 export const LogoImg = styled.img`
   position: absolute;
   left: 96%;
   top: 20%;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `
 
 export const SliderBlock = styled.div`
@@ -29,6 +36,9 @@ export const SliderBlock = styled.div`
   img {
     /* width: 100%; */
     text-align: center;
+  }
+  @media screen and (max-width: 700px) {
+    height: 200px;
   }
 `
 
@@ -43,6 +53,10 @@ export const NextArrow = styled.button`
   transition: 0.3s;
   &:hover {
     transform: scale(1.2) rotate(-20deg);
+  }
+  @media screen and (max-width: 700px) {
+    left: 40%;
+    top: 116%;
   }
 `
 export const PrevArrow = styled.button`
@@ -59,6 +73,10 @@ export const PrevArrow = styled.button`
   transform: rotate(180deg);
   &:hover {
     transform: scale(1.2) rotate(200deg);
+  }
+  @media screen and (max-width: 700px) {
+    left: 0%;
+    top: 116%;
   }
 `
 
@@ -100,7 +118,7 @@ export const AboutLogo = styled.div`
 
     animation: 10s rotateImg linear infinite;
     @media screen and (max-width: 700px) {
-      top: 60%;
+      top: 80%;
       right: 30%;
   }
     @keyframes rotateImg {
@@ -133,6 +151,9 @@ export const SurName = styled.img`
   width: 40%;
   top: 180px;
   z-index: 1;
+  @media screen and (max-width: 700px) {
+    top: 80px;
+  }
 `
 export const InfoImg = styled.img`
   position: relative;
@@ -144,6 +165,10 @@ export const InfoImg = styled.img`
 
   animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
+
+  @media screen and (max-width: 700px) {
+    margin-right: 0;
+  }
   @keyframes topWaveImg {
     0% {
       transform: 0;
@@ -166,8 +191,8 @@ export const InfoText = styled.p`
   @media screen and (max-width: 700px) {
     width: 70%;
     font-size: 10pt;
-    margin-left: 15%;
-    margin-top: 40px;
+    left: 3%;
+    top: 250px;
   }
 `
 

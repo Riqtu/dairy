@@ -22,7 +22,13 @@ const Contacts = (props) => {
       <Preloader setIsLoaded={setIsLoaded} isLoaded={isLoaded}></Preloader>
       <Header invert></Header>
       <ContactsVideoWrapper>
-        <Video loop="1" muted="1" autoPlay={true} poster="video/plane.jpg">
+        <Video
+          loop="1"
+          muted="1"
+          autoPlay={true}
+          playsInline
+          poster="video/plane.jpg"
+        >
           <source src={video} type="video/mp4" />
         </Video>
       </ContactsVideoWrapper>

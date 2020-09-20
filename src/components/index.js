@@ -1,4 +1,5 @@
 /*APPEND COMPONENT IMPORT HERE*/
+import MenuNew from './MenuNew'
 import Preloader from './Preloader'
 import MasterForm from './MasterForm'
 import Cheese from './Cheese'
@@ -12,6 +13,7 @@ import Header from './Header'
 
 export {
     /*APPEND COMPONENT EXPORT HERE*/
+  MenuNew,
   Preloader,
   MasterForm,
   Cheese,

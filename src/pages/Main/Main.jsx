@@ -12,10 +12,18 @@ import {
   Footer,
 } from './Main.styles'
 
-import { Header, Logo, Group, Reservation, Photo } from '../../components'
+import {
+  Header,
+  Logo,
+  Group,
+  Reservation,
+  Photo,
+  MenuNew,
+} from '../../components'
 
 import Fade from 'react-reveal/Fade'
 import Preloader from '../../components/Preloader/Preloader'
+import footerimg from './../../assets/footerimg.png'
 
 import { useStores } from './../../hooks/useStores'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
@@ -46,7 +54,8 @@ const Main = (props) => {
         </Fade>
         <AboutLogo></AboutLogo>
       </AboutWrapper>
-      <Group></Group>
+      {/* <Group></Group> */}
+      <MenuNew></MenuNew>
       <SecondAboutWrapper>
         <Fade bottom cascade>
           <SecondAboutText>
@@ -60,10 +69,7 @@ const Main = (props) => {
       <Photo></Photo>
       <Contact>
         <Fade bottom text>
-          <p>
-            Наш ресторан и производство находится <br />в самом центре
-            Ростова-на-Дону
-          </p>
+          <img src={footerimg} alt="" />
         </Fade>
         <Fade bottom text>
           <h1>
@@ -71,6 +77,10 @@ const Main = (props) => {
             SEMASHKO 51 <br />
             <a href="tel:8 (863) 269-90-45">8 (863) 269-90-45</a>
           </h1>
+          <p>
+            Наш ресторан и производство находится <br />в самом центре
+            Ростова-на-Дону
+          </p>
         </Fade>
       </Contact>
       <Fade bottom>
