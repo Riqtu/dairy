@@ -52,7 +52,7 @@ export const NextArrow = styled.button`
   outline: none;
   transition: 0.3s;
   &:hover {
-    transform: scale(1.2) rotate(-20deg);
+    transform: scale(1.2) translateX(5px);
   }
   @media screen and (max-width: 700px) {
     left: 40%;
@@ -72,7 +72,7 @@ export const PrevArrow = styled.button`
   transition: 0.3s;
   transform: rotate(180deg);
   &:hover {
-    transform: scale(1.2) rotate(200deg);
+    transform: scale(1.2) translateX(-5px) rotate(180deg);
   }
   @media screen and (max-width: 700px) {
     left: 0%;
@@ -116,20 +116,19 @@ export const AboutLogo = styled.div`
   background-size: contain;
   background-position: center;
 
-    animation: 10s rotateImg linear infinite;
-    @media screen and (max-width: 700px) {
-      top: 80%;
-      right: 30%;
+  animation: 10s rotateImg linear infinite;
+  @media screen and (max-width: 700px) {
+    top: 80%;
+    right: 30%;
   }
-    @keyframes rotateImg {
-        0% {
-        transform: rotate(360deg);
-        }
-        100% {
-        transform: rotate(0);
-        }
+  @keyframes rotateImg {
+    0% {
+      transform: rotate(360deg);
     }
-  
+    100% {
+      transform: rotate(0);
+    }
+  }
 `
 
 export const InfoWrapper = styled.div`

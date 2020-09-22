@@ -126,6 +126,23 @@ export const Contact = styled.div`
 
     float: left;
   }
+  @media screen and (max-width: 1366px) {
+    p {
+      font-size: 10pt;
+      margin-bottom: 200px;
+      margin-top: 30px;
+      float: left;
+      margin-right: 20%;
+    }
+    img {
+      width: 30%;
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-top: -50px;
+
+      float: left;
+    }
+  }
   @media screen and (max-width: 700px) {
     width: 80%;
     left: 10%;

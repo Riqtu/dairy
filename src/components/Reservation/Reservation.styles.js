@@ -65,7 +65,9 @@ export const TimeInput = styled.input`
   outline: none;
   font-family: 'Uberschrift';
   line-height: normal;
-
+  @media screen and (max-width: 1366px) {
+    font-size: 120pt;
+  }
   /* border-bottom: 1px solid black; */
   @media screen and (max-width: 700px) {
     font-size: 100pt;
@@ -125,7 +127,9 @@ export const DateInput = styled.input`
   outline: none;
   font-family: 'Uberschrift';
   line-height: normal;
-
+  @media screen and (max-width: 1366px) {
+    font-size: 120pt;
+  }
   /* border-bottom: 1px solid black; */
   @media screen and (max-width: 700px) {
     font-size: 60pt;
@@ -189,7 +193,11 @@ export const NameInput = styled.input`
   font-family: 'Uberschrift';
   border-bottom: 1px solid black;
   line-height: normal;
-
+  @media screen and (max-width: 1366px) {
+    width: 90%;
+    height: 90%;
+    font-size: ${(props) => (props.len < 5 ? '120pt' : '70pt')};
+  }
   @media screen and (max-width: 700px) {
     margin-left: 0;
     margin-top: -20px;
@@ -255,7 +263,9 @@ export const PhoneInput = styled.input`
   border-bottom: 1px solid black;
   float: left;
   line-height: normal;
-
+  @media screen and (max-width: 1366px) {
+    font-size: 60pt;
+  }
   @media screen and (max-width: 700px) {
     margin-left: 0;
     margin-top: 40px;

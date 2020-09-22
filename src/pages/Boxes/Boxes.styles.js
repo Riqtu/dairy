@@ -50,7 +50,7 @@ export const NextArrow = styled.button`
   outline: none;
   transition: 0.3s;
   &:hover {
-    transform: scale(1.2) rotate(-20deg);
+    transform: scale(1.2) translateX(5px);
   }
   @media screen and (max-width: 700px) {
     left: 40%;
@@ -70,7 +70,7 @@ export const PrevArrow = styled.button`
   transition: 0.3s;
   transform: rotate(180deg);
   &:hover {
-    transform: scale(1.2) rotate(200deg);
+    transform: scale(1.2) translateX(-5px) rotate(180deg);
   }
   @media screen and (max-width: 700px) {
     left: 0%;

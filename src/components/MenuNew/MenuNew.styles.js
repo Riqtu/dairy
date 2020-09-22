@@ -11,7 +11,7 @@ export const MenuNewWrapper = styled.div`
   transition: 1.3s;
   top: 0;
   left: 0;
-  z-index: 7 !important;
+  z-index: 3 !important;
   margin-top: 300px;
   /* padding-top: 40vh; */
 `

@@ -56,6 +56,10 @@ export const NameInput = styled.input`
   outline: none;
   font-family: 'Uberschrift';
   border-bottom: 1px solid black;
+  line-height: normal;
+  @media screen and (max-width: 1366px) {
+    font-size: ${(props) => (props.len < 5 ? '120pt' : '70pt')};
+  }
   @media screen and (max-width: 700px) {
     margin-left: 50px;
     font-size: 60pt;
@@ -109,6 +113,10 @@ export const PhoneInput = styled.input`
   outline: none;
   font-family: 'Uberschrift';
   float: left;
+  line-height: normal;
+  @media screen and (max-width: 1300px) {
+    font-size: 60pt;
+  }
   @media screen and (max-width: 700px) {
     margin-left: 100px;
     font-size: 23pt;

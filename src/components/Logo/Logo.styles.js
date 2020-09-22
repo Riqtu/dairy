@@ -117,6 +117,9 @@ export const ReImageLayer = styled.img`
     ${(props) =>
     props.isLoaded &&
     (props.rot ? 'none' : '10s waveImageLayer ease infinite alternate')}; */
+  @media screen and (max-width: 1366px) {
+    top: -27%;
+  }
   @media screen and (max-width: 700px) {
     transition: 1.8s;
 
