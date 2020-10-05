@@ -26,11 +26,11 @@ import Fade from 'react-reveal/Fade'
 import rest from './../../assets/sld1.png'
 import rest1 from './../../assets/rest1.png'
 import vlas from './../../assets/vlas.svg'
-import name from './../../assets/sirovarnya.svg'
-import vlasenko from './../../assets/vlasenko1.svg'
-import inf1 from './../../assets/inf1.png'
-import inf2 from './../../assets/inf2.png'
-import inf3 from './../../assets/inf3.png'
+import name from './../../assets/sirovarnya1.svg'
+import vlasenko from './../../assets/vlasenko3.svg'
+import inf1 from './../../assets/inf11.png'
+import inf2 from './../../assets/inf22.png'
+import inf3 from './../../assets/inf33.png'
 
 import msk from './../../assets/msk.png'
 import mskLogo from './../../assets/msklg.svg'
@@ -116,9 +116,10 @@ const Production = (props) => {
           delay={Math.floor(Math.random() * 1)}
         ></InfoImg>
         <InfoImg
+          w="35"
           src={inf3}
           alt=""
-          zind={0}
+          zind={2}
           duration={Math.random() * (4 - 2) + 2}
           delay={Math.floor(Math.random() * 1)}
         ></InfoImg>

@@ -25,13 +25,17 @@ export const Img = styled.img`
   width: ${(props) => (props.width ? props.width : 50)}%;
   position: relative;
   margin-left: ${(props) => props.margin}%;
-  margin-top: 50px;
-  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
-    ease infinite alternate;
+  margin-top: 40px;
+  /* animation: topWaveImg ${(props) => props.duration}s ${(props) =>
+    props.delay}s
+    ease infinite alternate; */
   transition: 0.3s;
   opacity: ${(props) => (props.disable ? '0.5' : '1')};
   &:hover {
     filter: invert(${(props) => (props.disable ? '0%' : '50%')});
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 15px;
   }
 `
 export const ImgLast = styled.img`
@@ -39,8 +43,9 @@ export const ImgLast = styled.img`
   position: relative;
   margin-left: ${(props) => props.margin}%;
   margin-top: ${(props) => (props.top ? props.top + '%' : '50px')};
-  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
-    ease infinite alternate;
+  /* animation: topWaveImg ${(props) => props.duration}s ${(props) =>
+    props.delay}s
+    ease infinite alternate; */
   transition: 0.3s;
   opacity: ${(props) => (props.disable ? '0.5' : '1')};
   float: left;

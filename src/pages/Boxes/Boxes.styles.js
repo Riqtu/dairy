@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import preloader from './../../assets/preloader.svg'
 
 export const BoxesWrapper = styled.div``
 
@@ -7,22 +8,41 @@ export const SliderWrapper = styled.div`
   width: 100%;
   left: 0%;
   margin-left: 0;
-  /* margin-top: 120px; */
+  margin-top: -120px;
+  @media screen and (max-width: 1152px) {
+    margin-top: -160px;
+  }
   @media screen and (max-width: 700px) {
-    width: 80%;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: -70px;
+
+    width: 120%;
+    margin-left: -10%;
   }
 `
 
 export const SliderBlock = styled.div`
   position: relative;
-  height: 600px;
+  height: 650px;
+  @media screen and (max-width: 1366px) {
+    height: 600px;
+  }
   @media screen and (max-width: 700px) {
-    height: 200px;
+    height: 430px;
+    /* width: 100%; */
   }
 `
 export const SliderImg = styled.img`
-  width: 20%;
-  margin-left: 40%;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 2%;
+  @media screen and (max-width: 700px) {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 0%;
+  }
 `
 export const BackImgLeft = styled.img`
   position: absolute;
@@ -53,8 +73,9 @@ export const NextArrow = styled.button`
     transform: scale(1.2) translateX(5px);
   }
   @media screen and (max-width: 700px) {
-    left: 40%;
-    top: 116%;
+    left: auto;
+    right: 10%;
+    top: 35%;
   }
 `
 export const PrevArrow = styled.button`
@@ -73,11 +94,36 @@ export const PrevArrow = styled.button`
     transform: scale(1.2) translateX(-5px) rotate(180deg);
   }
   @media screen and (max-width: 700px) {
-    left: 0%;
-    top: 116%;
+    left: 10%;
+    top: 35%;
+  }
+`
+export const Circle = styled.div`
+  position: fixed;
+  width: 20rem;
+  height: 20rem;
+  left: calc(50% - 10rem);
+  top: calc(50% - 10rem);
+  animation: start 1s forwards;
+
+  background-image: url(${preloader});
+  background-size: contain;
+  transition: 0.3s;
+  opacity: ${(props) => (props.swiped ? '0' : 1)};
+  animation: preloader 15s linear infinite;
+  @keyframes preloader {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 `
 export const SliderTitle = styled.div`
+  position: absolute;
+  top: auto;
+  bottom: 0;
   text-align: center;
   width: 40%;
   margin-left: 30%;
@@ -93,6 +139,15 @@ export const SliderTitle = styled.div`
   p {
     margin-top: -15px;
     color: #828282;
-    font-size: 11pt;
+    font-size: 10pt;
+  }
+
+  @media screen and (max-width: 1152px) {
+    margin-top: 0px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
   }
 `

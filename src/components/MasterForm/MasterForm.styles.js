@@ -3,19 +3,158 @@ import styled from '@emotion/styled'
 export const MasterFormWrapper = styled.div`
   position: relative;
   overflow: hidden;
-  padding-top: 50px;
-  background-color: #f1f0ed;
+  color: rgba(82, 72, 39, 1);
+  margin-bottom: 0px;
+  background-color: rgba(241, 240, 237, 1);
+  padding-top: 200px;
+`
+export const BigImage = styled.img`
+  position: relative;
+  width: 700px;
+  left: 40%;
+  @media screen and (max-width: 700px) {
+    width: 400px;
+  }
+`
+export const ReservationLogo = styled.img`
+  position: relative;
+  width: 700px;
+  left: 0%;
+  top: 0px;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  @media screen and (max-width: 700px) {
+    width: 300px;
+    top: 250px;
+  }
 `
 
 export const Form = styled.form`
   position: relative;
   width: 100%;
+
   /* height: 100vh; */
+`
+
+export const Time = styled.div`
+  position: relative;
+  margin-top: 50px;
+  width: 30%;
+  height: 250px;
+  left: 10%;
+  float: left;
+  label {
+    line-height: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10pt;
+  }
+  @media screen and (max-width: 700px) {
+    width: 80%;
+    height: 150px;
+    label {
+      top: 50%;
+    }
+  }
+`
+export const TimeInput = styled.input`
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 150pt;
+  line-height: 0;
+  margin-top: -20px;
+  padding-left: 20px;
+  outline: none;
+  font-family: 'Uberschrift';
+  line-height: normal;
+  color: rgba(82, 72, 39, 1);
+
+  @media screen and (max-width: 1366px) {
+    font-size: 120pt;
+  }
+  /* border-bottom: 1px solid black; */
+  @media screen and (max-width: 700px) {
+    font-size: 100pt;
+    margin-top: 50px;
+    height: auto;
+    line-height: normal;
+  }
+`
+export const Line = styled.div`
+  position: relative;
+  width: 150px;
+  /* left: 42.5%; */
+  margin-top: 160px;
+  height: 5px;
+  background-color: rgba(82, 72, 39, 1);
+  margin-left: 12%;
+  float: left;
+  @media screen and (max-width: 700px) {
+    margin-top: 130px;
+    height: 0px;
+    background-color: transparent;
+    /* display: none; */
+  }
+`
+export const Date = styled.div`
+  position: relative;
+  margin-top: 50px;
+  width: 46%;
+  height: 250px;
+  /* left: auto;
+  right: 0; */
+  float: left;
+  label {
+    line-height: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10pt;
+  }
+  @media screen and (max-width: 700px) {
+    width: 80%;
+    margin-left: 10%;
+    height: 90px;
+    top: 0;
+  }
+`
+export const DateInput = styled.input`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 150pt;
+  line-height: 0;
+  margin-top: -20px;
+  padding-left: 20px;
+  outline: none;
+  font-family: 'Uberschrift';
+  line-height: normal;
+  color: rgba(82, 72, 39, 1);
+
+  @media screen and (max-width: 1366px) {
+    font-size: 120pt;
+  }
+  /* border-bottom: 1px solid black; */
+  @media screen and (max-width: 700px) {
+    font-size: 60pt;
+    height: auto;
+
+    line-height: normal;
+  }
 `
 
 export const Name = styled.div`
   position: relative;
-  /* margin-top: 50px; */
+  margin-top: 0px;
   width: 45%;
   height: ${(props) => (props.len < 6 ? '270px' : '170px')};
   /* background-color: blue; */
@@ -29,22 +168,34 @@ export const Name = styled.div`
     opacity: 0.5;
     position: absolute;
     top: 100px;
-    left: 0;
+    left: -15%;
+    font-size: 10pt;
+
     @media screen and (max-width: 700px) {
       top: 50px;
     }
   }
   @media screen and (max-width: 700px) {
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
-    height: 80px;
+    height: 90px;
+    top: 0;
+    position: relative;
+    margin-top: 80px;
+    label {
+      line-height: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 `
 
 export const NameInput = styled.input`
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: transparent;
   border: none;
   font-size: ${(props) => (props.len < 5 ? '150pt' : '90pt')};
@@ -57,14 +208,20 @@ export const NameInput = styled.input`
   font-family: 'Uberschrift';
   border-bottom: 1px solid black;
   line-height: normal;
+  color: rgba(82, 72, 39, 1);
+
   @media screen and (max-width: 1366px) {
+    width: 90%;
+    height: 67%;
     font-size: ${(props) => (props.len < 5 ? '120pt' : '70pt')};
   }
   @media screen and (max-width: 700px) {
-    margin-left: 50px;
+    margin-left: 0;
+    margin-top: -20px;
+    padding-left: 20px;
     font-size: 60pt;
-    line-height: normal;
     height: auto;
+    line-height: normal;
   }
 `
 
@@ -79,7 +236,7 @@ export const Phone = styled.div`
   /* left: auto;
   right: 0; */
   float: left;
-  label {
+  /* label {
     line-height: 0;
     opacity: 0.5;
     position: absolute;
@@ -88,13 +245,32 @@ export const Phone = styled.div`
     @media screen and (max-width: 700px) {
       top: 15px;
     }
+  } */
+  label {
+    line-height: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10pt;
+  }
+  @media screen and (max-width: 1366px) {
+    margin-top: -50px;
   }
   @media screen and (max-width: 700px) {
-    width: 56%;
+    width: 80%;
     margin-left: 10%;
-    margin-top: 20%;
-
-    height: 150px;
+    height: 90px;
+    top: 0;
+    position: relative;
+    margin-top: 80px;
+    label {
+      line-height: 0;
+      opacity: 0.5;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 `
 
@@ -112,16 +288,24 @@ export const PhoneInput = styled.input`
   /* padding-left: 20px; */
   outline: none;
   font-family: 'Uberschrift';
+  border-bottom: 1px solid black;
   float: left;
+
   line-height: normal;
-  @media screen and (max-width: 1300px) {
+  color: rgba(82, 72, 39, 1);
+
+  @media screen and (max-width: 1366px) {
     font-size: 60pt;
+    width: 90%;
   }
   @media screen and (max-width: 700px) {
-    margin-left: 100px;
-    font-size: 23pt;
-    line-height: normal;
+    margin-left: 0;
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 60pt;
     height: auto;
+    line-height: normal;
+    font-size: 30pt;
   }
 `
 
@@ -132,19 +316,25 @@ export const Submit = styled.button`
   cursor: pointer;
   margin-top: 120px;
   left: 10%;
+  /* z-index: 5; */
   img {
-    width: 300px;
+    width: 250px;
   }
   transition: 0.3s;
   outline: none;
   &:hover {
     transform: scale(1.2) rotate(-20deg);
   }
+  @media screen and (max-width: 1366px) {
+    img {
+      width: 150px;
+    }
+  }
   @media screen and (max-width: 700px) {
     img {
       width: 200px;
     }
     left: calc(50% - 100px);
-    margin-top: 0px;
+    margin-top: 50px;
   }
 `

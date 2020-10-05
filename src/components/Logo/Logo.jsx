@@ -1,30 +1,22 @@
 import React from 'react'
-import {
-  LogoWrapper,
-  FirstLayer,
-  SecondLayer,
-  ImageLayer,
-  ReImageLayer,
-} from './Logo.styles'
+import { LogoWrapper, ReImageLayer } from './Logo.styles'
 
-import name from './../../assets/name2.svg'
-import production from './../../assets/production.svg'
-import master from './../../assets/master.svg'
-
-import vlasenko from './../../assets/vlasenko2.svg'
+// import name from './../../assets/name2.svg'
+// import production from './../../assets/production.svg'
+// import master from './../../assets/master.svg'
 
 import main from './../../assets/zgl1.png'
-import proizv from './../../assets/proizv.png'
+import proizv from './../../assets/proizv2.png'
 import master2 from './../../assets/master2.svg'
 
-import rest from './../../assets/rest2.png'
-import logo from './../../assets/logo1.png'
+// import rest from './../../assets/rest2.png'
+// import logo from './../../assets/logo1.png'
 
 const reimage = [main, proizv, master2]
 // import rest from './../../assets/rest2.png'
 
-const layer = [name, production, master]
-const img = [logo, logo, rest]
+// const layer = [name, production, master]
+// const img = [logo, logo, rest]
 
 const Logo = (props) => {
   return (
@@ -47,6 +39,7 @@ const Logo = (props) => {
       )} */}
       <ReImageLayer
         src={reimage[props.page]}
+        margin={props.page === 1 ? '-30' : '-20'}
         alt="Власенко"
         isLoaded={props.isLoaded}
       ></ReImageLayer>

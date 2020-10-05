@@ -106,7 +106,7 @@ const Photo = (props) => {
   return (
     <PhotoWrapper>
       <Fade bottom cascade>
-        <label>Фотографии</label>
+        {/* <label>Фотографии</label> */}
         <Logo>
           <img src={logo} alt="" />
         </Logo>

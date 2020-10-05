@@ -6,9 +6,8 @@ import {
   NextArrow,
   PrevArrow,
   SliderImg,
-  BackImgLeft,
-  BackImgRight,
   SliderTitle,
+  Circle,
 } from './Boxes.styles'
 import { Header, Preloader } from '../../components'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
@@ -16,8 +15,8 @@ import Slider from 'react-slick'
 
 import Fade from 'react-reveal/Fade'
 
-import rest from './../../assets/sld1.png'
-import rest1 from './../../assets/ch2.png'
+// import rest from './../../assets/sld1.png'
+// import rest1 from './../../assets/ch2.png'
 import arrow from './../../assets/Arrow.svg'
 
 import b1 from './../../assets/baskets/b1.png'
@@ -27,7 +26,7 @@ import b4 from './../../assets/baskets/b4.png'
 import b5 from './../../assets/baskets/b5.png'
 import b6 from './../../assets/baskets/b6.png'
 
-import { Circle } from '../../components/Preloader/Preloader.styles'
+// import { Circle } from '../../components/Preloader/Preloader.styles'
 
 function SampleNextArrow(props) {
   const { onClick } = props
@@ -54,28 +53,28 @@ const Boxes = (props) => {
     {
       img: b1,
       title: `KORZINA1`,
-      text: `Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий
-      сыр с благородной плесенью / Твердый выдержанный сыр /
-      Испанские оливки`,
+      text: `Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта /
+      Мягкий сыр с благородной плесенью / Твердый выдержанный сыр  / Испанские оливки `,
     },
     {
       img: b2,
       title: `KORZINA2`,
-      text: `Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий сыр с благородной плесенью / Твердый выдержанный сыр / Испанские оливки`,
+      text: `
+      Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта /
+      Мягкий сыр с благородной плесенью / Твердый выдержанный сыр  / Испанские оливки `,
     },
     {
       img: b3,
       title: `KORZINA3`,
-      text: `                  Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий
+      text: `Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий
       сыр с благородной плесенью / Твердый выдержанный сыр /
       Испанские оливки`,
     },
     {
       img: b4,
       title: `KORZINA4`,
-      text: `                  Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий
-      сыр с благородной плесенью / Твердый выдержанный сыр /
-      Испанские оливки`,
+      text: ` Сыр Качотта, сыр Дон Пеппер, Мягкий Сыр с белой плесенью, 
+      Твердый выдержанный сыр, Прошутто, Оливки, Сладкий перец фаршированный мягким сыром.`,
     },
     {
       img: b5,
@@ -120,9 +119,9 @@ const Boxes = (props) => {
       <Preloader isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
       <Header></Header>
       <SliderWrapper>
-        <Circle></Circle>
-        <BackImgLeft src={rest1} alt=""></BackImgLeft>
-        <BackImgRight src={rest1} alt=""></BackImgRight>
+        <Circle swiped={swiped}></Circle>
+        {/* <BackImgLeft src={rest1} alt=""></BackImgLeft>
+        <BackImgRight src={rest1} alt=""></BackImgRight> */}
         <Fade bottom cascade>
           <Slider
             {...settings}

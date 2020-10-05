@@ -12,7 +12,7 @@ import {
 } from './Master.styles'
 import { Logo, Header, Preloader, MasterForm } from './../../components'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
-import video from './../../assets/video/dairyTest.mp4'
+import video from './../../assets/video/dair.mp4'
 import img1 from './../../assets/rest1.png'
 import img2 from './../../assets/ms1.png'
 import fr from './../../assets/fr.svg'

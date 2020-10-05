@@ -19,6 +19,9 @@ export const Links = styled.ul`
   margin-top: 120px;
   transition: 0.5s;
   opacity: ${(props) => (props.active ? '1' : '0')};
+  @media screen and (max-width: 700px) {
+    margin-top: 50%;
+  }
 `
 export const Img = styled.img`
   width: 50%;
@@ -31,6 +34,13 @@ export const Img = styled.img`
   opacity: ${(props) => (props.disable ? '0.5' : '1')};
   &:hover {
     filter: invert(${(props) => (props.disable ? '0%' : '50%')});
+  }
+
+  @media screen and (max-width: 1366px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 15px;
   }
 `
 export const ImgLast = styled.img`
@@ -45,5 +55,8 @@ export const ImgLast = styled.img`
   float: left;
   &:hover {
     filter: invert(${(props) => (props.disable ? '0%' : '50%')});
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 15px;
   }
 `

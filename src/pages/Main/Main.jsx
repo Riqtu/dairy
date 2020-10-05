@@ -4,7 +4,7 @@ import {
   MainWrapper,
   AboutWrapper,
   AboutText,
-  AboutLogo,
+  // AboutLogo,
   AboutLine,
   SecondAboutText,
   SecondAboutWrapper,
@@ -15,7 +15,7 @@ import {
 import {
   Header,
   Logo,
-  Group,
+  // Group,
   Reservation,
   Photo,
   MenuNew,
@@ -52,7 +52,7 @@ const Main = (props) => {
             дело часть души.
           </AboutText>
         </Fade>
-        <AboutLogo></AboutLogo>
+        {/* <AboutLogo></AboutLogo> */}
       </AboutWrapper>
       {/* <Group></Group> */}
       <MenuNew></MenuNew>
@@ -65,8 +65,8 @@ const Main = (props) => {
           </SecondAboutText>
         </Fade>
       </SecondAboutWrapper>
-      <Reservation></Reservation>
       <Photo></Photo>
+      <Reservation></Reservation>
       <Contact>
         <Fade bottom text>
           <img src={footerimg} alt="" />
@@ -74,7 +74,8 @@ const Main = (props) => {
         <Fade bottom text>
           <h1>
             ROSTOV-NA-DONU <br />
-            SEMASHKO 51 <br />
+            <b>SEMASHKO 51 </b>
+            <br />
             <a href="tel:8 (863) 269-90-45">8 (863) 269-90-45</a>
           </h1>
           <p>

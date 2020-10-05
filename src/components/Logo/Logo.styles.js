@@ -104,11 +104,10 @@ export const ImageLayer = styled.img`
 export const ReImageLayer = styled.img`
   position: absolute;
   left: 5%;
-  width: 90%;
+  width: 92%;
   transition: 1.8s;
   opacity: 1;
-  top: -20%;
-
+  top: ${(props) => props.margin}%;
   /* animation: ${(props) =>
     props.isLoaded &&
     (props.rot
@@ -123,9 +122,8 @@ export const ReImageLayer = styled.img`
   @media screen and (max-width: 700px) {
     transition: 1.8s;
 
-    top: ${(props) => (props.scrolled ? props.y + 50 + 'px' : '20px')};
-    left: calc(50% - ${(props) => (props.scrolled ? props.x + '%' : '35px')});
-    width: 70px;
+    left: 5%;
+    /* width: 70px; */
   }
   @keyframes rotateImageLayer {
     0% {

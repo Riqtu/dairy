@@ -7,6 +7,7 @@ export const HeaderWrapper = styled.header`
   height: 200px;
   width: 100%;
   font-family: 'Open Sans';
+
   z-index: 6;
   animation: 2s flash ease forwards;
   filter: invert(${(props) => (props.invert ? '1' : '0')});
@@ -23,11 +24,11 @@ export const HeaderWrapper = styled.header`
 `
 export const Links = styled.ul`
   position: absolute;
-  left: 20px;
-  top: 42px;
+  left: 57px;
+  top: 36px;
   list-style-type: none;
-  font-size: 0.8rem;
-  line-height: 19px;
+  font-size: 0.7rem;
+  line-height: 17px;
   a {
     color: black;
     text-decoration: none;
@@ -37,18 +38,23 @@ export const Links = styled.ul`
       font-size: 0.9rem;
     }
   }
+  li {
+    color: ${(props) => (props.color ? 'green' : 'black')};
+  }
   @media screen and (max-width: 700px) {
     left: 0;
     top: 20px;
   }
 `
 export const MenuButton = styled.button`
-  position: ${(props) => (props.active ? 'fixed' : 'absolute')};
+  /* position: ${(props) => (props.active ? 'fixed' : 'absolute')}; */
+  position: fixed;
   filter: invert(${(props) => (props.invert ? '1' : '0')});
 
   cursor: pointer;
-  width: 68px;
-  height: 66px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
   left: auto;
   right: 80px;
   top: 60px;
@@ -60,13 +66,13 @@ export const MenuButton = styled.button`
   transition: 0.3s;
   outline: none;
   z-index: 8 !important;
-  &:hover{
-      transform: scale(1.2) rotate(20deg)
+  &:hover {
+    transform: scale(1.2) rotate(20deg);
   }
-  
+
   @media screen and (max-width: 700px) {
     /* left: 0; */
-    top: 40px;
-    right: 50px;
+    top: 30px;
+    right: 30px;
   }
 `

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { PreloaderWrapper, Circle } from './Preloader.styles'
+import { PreloaderWrapper, Circle, Container } from './Preloader.styles'
 
 const Preloader = (props) => {
   const [disActive, setDisactive] = useState(false)
@@ -43,8 +43,10 @@ const Preloader = (props) => {
       disActive={disActive}
       id="preloader"
     >
-      <Circle></Circle>
-      <p>{progress}%</p>
+      <Container>
+        <Circle></Circle>
+        <p>{progress}%</p>
+      </Container>
     </PreloaderWrapper>
   )
 }

@@ -11,20 +11,25 @@ const Header = observer((props) => {
   return (
     <div>
       <HeaderWrapper invert={props.invert}>
-        <Links active={props.active}>
+        <Links active={props.active} style={{ zIndex: 5 }}>
           <li onClick={() => mainStore.setHref('/')}>
             <DelayLink to="/">Ресторан</DelayLink>
           </li>
-          <li onClick={() => mainStore.setHref('/production')}>
-            <DelayLink to="/production" id="qwe">
-              Производство
-            </DelayLink>
+          <li style={{ float: 'none' }}>
+            <Link to="/master-class">Мастерклассы</Link>
           </li>
           <li>
             <Link to="/boxes">Подарочные наборы</Link>
           </li>
-          <li>
-            <Link to="/master-class">Мастерклассы</Link>
+        </Links>
+        <Links active={props.active}>
+          <li
+            onClick={() => mainStore.setHref('/production')}
+            style={{ marginLeft: '150px' }}
+          >
+            <DelayLink to="/production" id="qwe">
+              Производство
+            </DelayLink>
           </li>
         </Links>
       </HeaderWrapper>

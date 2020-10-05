@@ -46,7 +46,7 @@ export const FirstBlockImg = styled.img`
 export const FirstBlockText = styled.p`
   position: relative;
   left: 20%;
-  font-size: 13pt;
+  font-size: 10pt;
   width: 80%;
   margin-top: -20px;
   color: #828282;
@@ -59,9 +59,9 @@ export const SecBlock = styled.div`
 `
 export const SecBlockLogo = styled.img`
   position: absolute;
-  width: 41%;
+  width: 35%;
   left: 0%;
-  top: 30%;
+  top: 10%;
 `
 export const SecBlockNumber = styled.img`
   position: absolute;
@@ -75,12 +75,14 @@ export const SecBlockImg = styled.img`
   position: relative;
   width: 40%;
   left: 40%;
+  opacity: 0;
+  mix-blend-mode: darken !important;
 `
 export const SecBlockText = styled.p`
   position: absolute;
   left: 0%;
-  top: 45%;
-  font-size: 13pt;
+  top: 55%;
+  font-size: 10pt;
   width: 40%;
   float: left;
   color: #828282;
@@ -91,6 +93,11 @@ export const ThirdBlock = styled.div`
   width: 55%;
   margin-top: 150px;
   z-index: 1;
+  @media screen and (max-width: 700px) {
+    padding-bottom: 50px;
+    width: 100%;
+    /* background-color: #e5e5e5; */
+  }
 `
 export const ThirdBlockLogo = styled.img`
   position: absolute;
@@ -98,6 +105,9 @@ export const ThirdBlockLogo = styled.img`
   left: auto;
   right: 0;
   top: 10%;
+  @media screen and (max-width: 700px) {
+    left: 50px;
+  }
 `
 export const ThirdBlockNumber = styled.img`
   position: absolute;
@@ -110,15 +120,21 @@ export const ThirdBlockImg = styled.img`
   position: relative;
   width: 45%;
   left: 10%;
+  @media screen and (max-width: 700px) {
+    opacity: 0 !important;
+  }
 `
 export const ThirdBlockText = styled.p`
   position: absolute;
   left: auto;
   right: 0;
   top: 25%;
-  font-size: 13pt;
+  font-size: 10pt;
   width: 40%;
   color: #828282;
+  @media screen and (max-width: 700px) {
+    left: 50px;
+  }
 `
 
 export const FourBlock = styled.div`
@@ -157,10 +173,18 @@ export const FourBlockText = styled.p`
   left: 85%;
   top: 55%;
   width: 40%;
-  font-size: 13pt;
+  font-size: 10pt;
   color: #828282;
   @media screen and (max-width: 700px) {
     left: 0;
     font-size: 10pt;
   }
+`
+
+export const CheeseLogo = styled.img`
+  position: absolute;
+  width: 15%;
+  top: 0%;
+  left: -45%;
+  opacity: 1;
 `

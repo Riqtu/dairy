@@ -94,7 +94,8 @@ export const AboutText = styled.p`
   position: relative;
   width: 30%;
   opacity: 0.5;
-  margin-left: 60%;
+  margin-left: 50%;
+  font-size: 10pt;
 
   @media screen and (max-width: 700px) {
     width: 70%;
@@ -108,14 +109,14 @@ export const AboutLogo = styled.div`
   position: absolute;
   width: 102px;
   height: 100px;
-  left: 10%;
+  left: 15%;
   transition: 0.4s;
   top: 20%;
   border: none;
   background-image: url('${logoCircle}');
   background-size: contain;
   background-position: center;
-
+  opacity: 0.6;
   animation: 10s rotateImg linear infinite;
   @media screen and (max-width: 700px) {
     top: 80%;
@@ -156,7 +157,7 @@ export const SurName = styled.img`
 `
 export const InfoImg = styled.img`
   position: relative;
-  width: 25%;
+  width: ${(props) => (props.w ? props.w : '25')}%;
   margin-right: 50px;
   margin-top: ${(props) => props.margin}px;
   vertical-align: top;
@@ -186,6 +187,7 @@ export const InfoText = styled.p`
   bottom: 20px;
   opacity: 0.5;
   color: #828282;
+  font-size: 10pt;
 
   @media screen and (max-width: 700px) {
     width: 70%;

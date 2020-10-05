@@ -4,11 +4,11 @@ import cursor from './../../assets/cursor3.png'
 
 export const PhotoWrapper = styled.div`
   position: relative;
-  margin-top: 100px;
+  margin-top: 0px;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
-  cursor: url(${cursor}) 35 35, auto;
+  /* cursor: url(${cursor}) 35 35, auto; */
   label {
     color: rgba(0, 0, 0, 0.5);
     position: relative;
@@ -115,10 +115,11 @@ export const Layer = styled.img`
 `
 export const Date = styled.img`
   position: absolute;
-  width: 350px;
+  width: 500px;
   top: auto;
-  left: 18%;
-  bottom: 100px;
+  left: 13%;
+  bottom: 130px;
+  /* z-index: 100; */
   /* margin-top: 50px; */
   @media screen and (max-width: 700px) {
     display: none;
@@ -126,12 +127,12 @@ export const Date = styled.img`
 `
 
 export const Button = styled.button`
-  /* cursor: pointer; */
+  cursor: pointer;
   position: absolute;
   top: auto;
   left: auto;
-  bottom: 0;
-  right: ${(props) => (props.prev ? '590px' : '490px')};
+  bottom: -50px;
+  right: ${(props) => (props.prev ? '280px' : '150px')};
   background-color: transparent;
   border: none;
   transition: 0.3s;

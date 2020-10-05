@@ -11,15 +11,20 @@ export const AboutWrapper = styled.div`
   height: 200px;
   margin-top: 100px;
   padding: 40px;
+
   @media screen and (max-width: 700px) {
     padding: 0;
+    /* margin-top: 300vh; */
   }
 `
 export const AboutText = styled.p`
   position: relative;
   width: 40%;
   font-style: italic;
-  margin-left: 20%;
+  margin-left: 15%;
+  font-size: 10pt;
+  color: rgba(130, 130, 130, 1);
+
   @media screen and (max-width: 700px) {
     width: 70%;
     font-size: 10pt;
@@ -31,7 +36,7 @@ export const AboutText = styled.p`
 export const AboutLine = styled.div`
   position: absolute;
   width: 46.25px;
-  left: 13%;
+  left: 7.5%;
   margin-top: 30px;
   height: 0px;
   border: 1px solid #797979;
@@ -41,10 +46,10 @@ export const AboutLine = styled.div`
 `
 export const AboutLogo = styled.div`
   position: absolute;
-  width: 102px;
-  height: 100px;
+  width: 48px;
+  height: 46px;
   left: auto;
-  right: 12%;
+  right: 14%;
   top: 20%;
   border: none;
   background-image: url('${logoCircle}');
@@ -71,18 +76,21 @@ export const SecondAboutWrapper = styled.div`
   width: 100%;
   height: 300px;
   /* top: 400px; */
-  margin-top: 0px;
+  margin-top: -300px;
   padding: 40px;
   float: none;
   @media screen and (max-width: 700px) {
     padding: 0;
+    margin-top: 0;
   }
 `
 export const SecondAboutText = styled.p`
   position: relative;
   width: 40%;
   font-style: italic;
-  margin-left: 20%;
+  margin-left: 8%;
+  color: rgba(130, 130, 130, 1);
+  font-size: 10pt;
   @media screen and (max-width: 700px) {
     width: 70%;
     font-size: 10pt;
@@ -113,6 +121,14 @@ export const Contact = styled.div`
     font-size: 40pt;
     font-family: 'Uberschrift';
     font-weight: lighter;
+    b {
+      font-weight: normal;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    b:hover {
+      color: rgba(255, 168, 0, 1);
+    }
   }
   a {
     color: black;
@@ -125,6 +141,9 @@ export const Contact = styled.div`
     margin-top: -100px;
 
     float: left;
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
   }
   @media screen and (max-width: 1366px) {
     p {
@@ -160,6 +179,8 @@ export const Footer = styled.footer`
   margin-left: 5%;
   opacity: 0.5;
   overflow: hidden;
+  margin-bottom: 0px;
+
   p {
     margin: 20px 70px;
   }

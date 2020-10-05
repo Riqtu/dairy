@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {
   ReservationWrapper,
-  BigImage,
+  // BigImage,
   ReservationLogo,
   Form,
   Time,
@@ -16,7 +16,7 @@ import {
   Submit,
 } from './Reservation.styles'
 
-import img5 from './../../assets/img5.png'
+// import img5 from './../../assets/img5.png'
 import submit from './../../assets/submit.svg'
 import reservation from './../../assets/reserv.svg'
 
@@ -32,7 +32,7 @@ const Reservation = (props) => {
   return (
     <ReservationWrapper>
       <Fade bottom cascade>
-        <BigImage src={img5} alt="Картинка"></BigImage>
+        {/* <BigImage src={img5} alt="Картинка"></BigImage> */}
         <ReservationLogo src={reservation} alt="Картинка"></ReservationLogo>
         <Form>
           <Time>

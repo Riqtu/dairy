@@ -21,18 +21,26 @@ import {
   FourBlockNumber,
   FourBlockText,
   Line,
+  CheeseLogo,
 } from './Cheese.styles'
 
 import line from './../../assets/chLine.svg'
-import naming from './../../assets/naming.svg'
+// import naming from './../../assets/naming.svg'
+import nm1 from './../../assets/nm1.svg'
+import nm2 from './../../assets/nm2.svg'
+import nm3 from './../../assets/nm3.svg'
+
 import ch1 from './../../assets/ch1.png'
 import ch2 from './../../assets/ch2.png'
+import ch3 from './../../assets/ch3.png'
+
 import ch4 from './../../assets/ch4.png'
 
 import fr from './../../assets/fr.svg'
 import sc from './../../assets/sc.svg'
 import th from './../../assets/th.svg'
 import four from './../../assets/for.svg'
+import rotLogo from './../../assets/rotlogo.svg'
 
 import Fade from 'react-reveal'
 
@@ -40,9 +48,10 @@ const Cheese = (props) => {
   return (
     <CheeseWrapper>
       <Line src={line} alt=""></Line>
+      <CheeseLogo src={rotLogo} alt="" />
       <FirstBlock>
         <Fade bottom cascade>
-          <FirstBlockLogo src={naming} alt=""></FirstBlockLogo>
+          <FirstBlockLogo src={nm1} alt=""></FirstBlockLogo>
           <FirstBlockNumber src={fr} alt=""></FirstBlockNumber>
           <FirstBlockImg src={ch1} alt=""></FirstBlockImg>
           <FirstBlockText>
@@ -53,23 +62,23 @@ const Cheese = (props) => {
       </FirstBlock>
       <SecBlock>
         <Fade bottom cascade>
-          <SecBlockLogo src={naming} alt=""></SecBlockLogo>
+          <SecBlockLogo src={nm2} alt=""></SecBlockLogo>
           <SecBlockNumber src={sc} alt=""></SecBlockNumber>
           <SecBlockImg src={ch2} alt=""></SecBlockImg>
           <SecBlockText>
-            Cillum reprehenderit sint ipsum sit do enim irure dolor. Officia
-            Cillum reprehenderit sint
+            Добавление закваски. Время свертывания влияет на формирование
+            конечного продукта
           </SecBlockText>
         </Fade>
       </SecBlock>
       <ThirdBlock>
         <Fade bottom cascade>
-          <ThirdBlockLogo src={naming} alt=""></ThirdBlockLogo>
+          <ThirdBlockLogo src={nm3} alt=""></ThirdBlockLogo>
           <ThirdBlockNumber src={th} alt=""></ThirdBlockNumber>
-          <ThirdBlockImg src={ch2} alt=""></ThirdBlockImg>
+          <ThirdBlockImg src={ch3} alt=""></ThirdBlockImg>
           <ThirdBlockText>
-            Cillum reprehenderit sint ipsum sit do enim irure dolor. Officia
-            Cillum reprehenderit sint
+            Сыр выкладывается в формы.В зависимости от рецепта применяется
+            прессование,чтобы осушить продукт и получить плотную структуру
           </ThirdBlockText>
         </Fade>
       </ThirdBlock>
@@ -78,7 +87,8 @@ const Cheese = (props) => {
           <FourBlockNumber src={four} alt=""></FourBlockNumber>
           <FourBlockImg src={ch4} alt=""></FourBlockImg>
           <FourBlockText>
-            Cillum reprehenderit sint ipsum sit do enim irure
+            Дальше сыр проходит этап созревания, который оказывает ключевое
+            влияние на вкусовые качества
           </FourBlockText>
         </Fade>
       </FourBlock>
