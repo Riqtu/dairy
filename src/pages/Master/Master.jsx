@@ -48,7 +48,7 @@ const Master = (props) => {
         <img src={img2} alt="" id="info2" />
         <img src={fr} alt="" id="infoNumb" />
         <InfoTextLeft>
-          Cillum reprehenderit sint ipsum sit do enim irure dolor. Officia
+          Для нашего сыра мы берем только цельное коровье и козье молоко
         </InfoTextLeft>
         <InfoTextRight>
           Мы готовим молодые рассольные, полутвердые, мягкие с плесенью,а также

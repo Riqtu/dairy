@@ -11,12 +11,13 @@ import {
 } from './Photo.styles'
 
 import logo from './../../assets/pectopah.svg'
-import rest1 from './../../assets/rest1.png'
-import rest2 from './../../assets/rest2.png'
-import rest3 from './../../assets/rest3.png'
-import rest4 from './../../assets/rest4.png'
-import rest5 from './../../assets/rest5.png'
-import rest6 from './../../assets/rest6.png'
+import rest1 from './../../assets/photo/l1.png'
+import rest2 from './../../assets/photo/l2.png'
+import rest3 from './../../assets/photo/l3.png'
+import rest4 from './../../assets/photo/l4.png'
+import rest5 from './../../assets/photo/l5.png'
+import rest6 from './../../assets/photo/l6.png'
+import rest7 from './../../assets/photo/l7.png'
 
 import date from './../../assets/date.svg'
 import arrow from './../../assets/Arrow.svg'
@@ -88,6 +89,10 @@ const Photo = (props) => {
     {
       img: rest6,
       top: 20,
+    },
+    {
+      img: rest7,
+      top: 10,
     },
   ]
   const layers = arr.map((el, index) => {

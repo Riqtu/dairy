@@ -30,7 +30,7 @@ import nm1 from './../../assets/nm1.svg'
 import nm2 from './../../assets/nm2.svg'
 import nm3 from './../../assets/nm3.svg'
 
-import ch1 from './../../assets/ch1.png'
+import ch1 from './../../assets/milk.png'
 import ch2 from './../../assets/ch2.png'
 import ch3 from './../../assets/ch3.png'
 
@@ -55,8 +55,7 @@ const Cheese = (props) => {
           <FirstBlockNumber src={fr} alt=""></FirstBlockNumber>
           <FirstBlockImg src={ch1} alt=""></FirstBlockImg>
           <FirstBlockText>
-            Cillum reprehenderit sint ipsum sit do enim irure dolor. Officia
-            Cillum reprehenderit sint
+            Нагревание молока до очень высокой температуры.
           </FirstBlockText>
         </Fade>
       </FirstBlock>

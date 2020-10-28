@@ -19,7 +19,10 @@ export const LogoWrapper = styled.div`
   padding-top: ${(props) => (props.scrolled ? '200px' : '')};
   transition: 1s;
   filter: invert(${(props) => (props.invert ? '1' : '0')});
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1024px) {
+    min-height: 35vh;
+  }
+  @media screen and (max-width: 770px) {
     min-height: 20vh;
   }
 `
@@ -119,9 +122,8 @@ export const ReImageLayer = styled.img`
   @media screen and (max-width: 1366px) {
     top: -27%;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     transition: 1.8s;
-
     left: 5%;
     /* width: 70px; */
   }

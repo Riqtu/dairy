@@ -29,7 +29,7 @@ export const VideoBlockContainer = styled.div`
   position: relative;
   width: 80%;
   height: 600px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     height: 200px;
   }
 `
@@ -44,7 +44,7 @@ export const InfoWrapper = styled.div`
   background-color: #f1f0ed;
   padding: 5% 15%;
   padding-bottom: 200px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     padding: 0;
     padding-bottom: 200px;
   }
@@ -53,7 +53,7 @@ export const InfoWrapper = styled.div`
     width: 20%;
     margin-left: 27%;
     top: 200px;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       margin-left: 0%;
       margin-top: 0;
       width: 50%;
@@ -63,7 +63,7 @@ export const InfoWrapper = styled.div`
     position: relative;
     width: 20%;
     margin-left: 5%;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       margin-left: 55%;
       margin-top: 0;
       width: 40%;
@@ -83,7 +83,7 @@ export const InfoTextLeft = styled.p`
   top: 47%;
   font-size: 10pt;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     position: absolute;
     width: 13%;
     left: 18%;
@@ -101,7 +101,7 @@ export const InfoTextRight = styled.p`
   bottom: 5%;
   width: 16%;
   font-size: 10pt;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     position: absolute;
     left: 51.5%;
     /* right: 0; */

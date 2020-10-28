@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import {
   ContactsWrapper,
-  ContactsVideoWrapper,
-  Video,
+  // ContactsVideoWrapper,
+  // Video,
   ContactsTextWrapper,
   ContactsLogo,
 } from './Contacts.styles'
 
-import video from './../../assets/video/dairyTest.mp4'
+// import video from './../../assets/video/dairyTest.mp4'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
 import { Preloader, Header } from '../../components'
 import logoCircle from './../../assets/logo-circle.png'
@@ -20,8 +20,8 @@ const Contacts = (props) => {
   return (
     <ContactsWrapper>
       <Preloader setIsLoaded={setIsLoaded} isLoaded={isLoaded}></Preloader>
-      <Header invert></Header>
-      <ContactsVideoWrapper>
+      <Header></Header>
+      {/* <ContactsVideoWrapper>
         <Video
           loop="1"
           muted="1"
@@ -31,7 +31,7 @@ const Contacts = (props) => {
         >
           <source src={video} type="video/mp4" />
         </Video>
-      </ContactsVideoWrapper>
+      </ContactsVideoWrapper> */}
       <ContactsTextWrapper>
         ROSTOV-NA-DONU <br /> SEMASHKO 51 <br />
         <img src={logoCircle} alt="" /> <br /> 8 (863) 269-90-45

@@ -12,7 +12,7 @@ export const AboutWrapper = styled.div`
   margin-top: 100px;
   padding: 40px;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     padding: 0;
     /* margin-top: 300vh; */
   }
@@ -25,7 +25,7 @@ export const AboutText = styled.p`
   font-size: 10pt;
   color: rgba(130, 130, 130, 1);
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 70%;
     font-size: 10pt;
     margin-left: 15%;
@@ -40,7 +40,7 @@ export const AboutLine = styled.div`
   margin-top: 30px;
   height: 0px;
   border: 1px solid #797979;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     margin-top: 0;
   }
 `
@@ -57,7 +57,7 @@ export const AboutLogo = styled.div`
   background-position: center;
   transform: scale(1.2) rotate(20deg);
   animation: 10s rotateImg linear infinite;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     top: 65%;
     right: 30%;
   }
@@ -79,7 +79,7 @@ export const SecondAboutWrapper = styled.div`
   margin-top: -300px;
   padding: 40px;
   float: none;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     padding: 0;
     margin-top: 0;
   }
@@ -91,7 +91,7 @@ export const SecondAboutText = styled.p`
   margin-left: 8%;
   color: rgba(130, 130, 130, 1);
   font-size: 10pt;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 70%;
     font-size: 10pt;
     margin-left: 15%;
@@ -141,7 +141,7 @@ export const Contact = styled.div`
     margin-top: -100px;
 
     float: left;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       display: none;
     }
   }
@@ -162,7 +162,7 @@ export const Contact = styled.div`
       float: left;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 80%;
     left: 10%;
     h1 {

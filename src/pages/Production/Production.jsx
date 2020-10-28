@@ -23,7 +23,7 @@ import { Logo, Header, Cheese, MasterForm, Preloader } from '../../components'
 import Slider from 'react-slick'
 import Fade from 'react-reveal/Fade'
 
-import rest from './../../assets/sld1.png'
+import rest from './../../assets/qwer.png'
 import rest1 from './../../assets/rest1.png'
 import vlas from './../../assets/vlas.svg'
 import name from './../../assets/sirovarnya1.svg'
@@ -32,7 +32,7 @@ import inf1 from './../../assets/inf11.png'
 import inf2 from './../../assets/inf22.png'
 import inf3 from './../../assets/inf33.png'
 
-import msk from './../../assets/msk.png'
+import msk from './../../assets/msk1.png'
 import mskLogo from './../../assets/msklg.svg'
 
 import arrow from './../../assets/Arrow.svg'

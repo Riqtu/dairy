@@ -10,20 +10,20 @@ export const MasterFormWrapper = styled.div`
 `
 export const BigImage = styled.img`
   position: relative;
-  width: 700px;
+  width: 770px;
   left: 40%;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 400px;
   }
 `
 export const ReservationLogo = styled.img`
   position: relative;
-  width: 700px;
+  width: 770px;
   left: 0%;
   top: 0px;
   margin-top: 80px;
   margin-bottom: 120px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 300px;
     top: 250px;
   }
@@ -51,7 +51,7 @@ export const Time = styled.div`
     left: 0;
     font-size: 10pt;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 80%;
     height: 150px;
     label {
@@ -79,7 +79,7 @@ export const TimeInput = styled.input`
     font-size: 120pt;
   }
   /* border-bottom: 1px solid black; */
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     font-size: 100pt;
     margin-top: 50px;
     height: auto;
@@ -95,7 +95,7 @@ export const Line = styled.div`
   background-color: rgba(82, 72, 39, 1);
   margin-left: 12%;
   float: left;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     margin-top: 130px;
     height: 0px;
     background-color: transparent;
@@ -118,7 +118,7 @@ export const Date = styled.div`
     left: 0;
     font-size: 10pt;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 80%;
     margin-left: 10%;
     height: 90px;
@@ -143,8 +143,11 @@ export const DateInput = styled.input`
   @media screen and (max-width: 1366px) {
     font-size: 120pt;
   }
+  @media screen and (max-width: 1240px) {
+    font-size: 100pt;
+  }
   /* border-bottom: 1px solid black; */
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     font-size: 60pt;
     height: auto;
 
@@ -157,6 +160,9 @@ export const Name = styled.div`
   margin-top: 0px;
   width: 45%;
   height: ${(props) => (props.len < 6 ? '270px' : '170px')};
+  @media screen and (min-width: 1600px) {
+    height: ${(props) => (props.len < 6 ? '300px' : '170px')};
+  }
   /* background-color: blue; */
   margin-left: 17%;
   transition: 0.6s;
@@ -171,11 +177,11 @@ export const Name = styled.div`
     left: -15%;
     font-size: 10pt;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       top: 50px;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 80%;
     margin-left: 10%;
     height: 90px;
@@ -199,6 +205,9 @@ export const NameInput = styled.input`
   background-color: transparent;
   border: none;
   font-size: ${(props) => (props.len < 5 ? '150pt' : '90pt')};
+  @media screen and (min-width: 1600px) {
+    height: ${(props) => (props.len < 6 ? '300px' : '170px')};
+  }
   line-height: 0;
   margin-top: -20px;
   margin-left: 70px;
@@ -213,9 +222,9 @@ export const NameInput = styled.input`
   @media screen and (max-width: 1366px) {
     width: 90%;
     height: 67%;
-    font-size: ${(props) => (props.len < 5 ? '120pt' : '70pt')};
+    font-size: ${(props) => (props.len < 5 ? '100pt' : '70pt')};
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     margin-left: 0;
     margin-top: -20px;
     padding-left: 20px;
@@ -242,7 +251,7 @@ export const Phone = styled.div`
     position: absolute;
     top: 40px;
     left: 0;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 770px) {
       top: 15px;
     }
   } */
@@ -257,7 +266,7 @@ export const Phone = styled.div`
   @media screen and (max-width: 1366px) {
     margin-top: -50px;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 80%;
     margin-left: 10%;
     height: 90px;
@@ -295,17 +304,17 @@ export const PhoneInput = styled.input`
   color: rgba(82, 72, 39, 1);
 
   @media screen and (max-width: 1366px) {
-    font-size: 60pt;
+    font-size: 40pt;
     width: 90%;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     margin-left: 0;
     margin-top: 40px;
     padding-left: 20px;
     font-size: 60pt;
     height: auto;
     line-height: normal;
-    font-size: 30pt;
+    font-size: 26pt;
   }
 `
 
@@ -330,7 +339,7 @@ export const Submit = styled.button`
       width: 150px;
     }
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     img {
       width: 200px;
     }

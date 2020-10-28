@@ -28,18 +28,34 @@ const Reservation = (props) => {
   const [date, setDate] = useState('')
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
+  const [sub, setSub] = useState(false)
 
   return (
     <ReservationWrapper>
       <Fade bottom cascade>
         {/* <BigImage src={img5} alt="Картинка"></BigImage> */}
+        <iframe
+          title="formPost"
+          name="formPost"
+          style={{ display: 'none' }}
+        ></iframe>
         <ReservationLogo src={reservation} alt="Картинка"></ReservationLogo>
-        <Form>
+        <Form
+          action="https://formspree.io/f/mvovkgpz"
+          method="POST"
+          target="formPost"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="Резервация стола - Сыроварня"
+          />
           <Time>
             <label>Во сколько</label>
             <InputMask
               mask="99:99"
               type="text"
+              name="Время"
               placeholder="19:00"
               maskPlaceholder="19:00"
               value={time}
@@ -56,6 +72,7 @@ const Reservation = (props) => {
             <InputMask
               mask="99.99/20"
               type="text"
+              name="Дата"
               placeholder="25.08/20"
               maskPlaceholder="25.08/20"
               value={date}
@@ -72,6 +89,7 @@ const Reservation = (props) => {
               type="text"
               placeholder="IVANOV"
               value={name}
+              name="Имя"
               onChange={(e) => {
                 setName(e.target.value)
               }}
@@ -84,6 +102,7 @@ const Reservation = (props) => {
             <InputMask
               mask="+7 (999) 999-99-99"
               type="text"
+              name="Телефон"
               placeholder="+7 (999) 999-99-99"
               maskPlaceholder="+7 (999) 999-99-99"
               value={phone}
@@ -94,8 +113,8 @@ const Reservation = (props) => {
               <PhoneInput disableUnderline />
             </InputMask>
           </Phone>
-          <Submit>
-            <img src={submit} alt="" />
+          <Submit sub={sub}>
+            <img src={submit} sub={sub} alt="" onClick={() => setSub(true)} />
           </Submit>
         </Form>
       </Fade>

@@ -42,6 +42,7 @@ export const FirstBlockImg = styled.img`
   position: relative;
   width: 80%;
   left: 20%;
+  mix-blend-mode: multiply;
 `
 export const FirstBlockText = styled.p`
   position: relative;
@@ -122,6 +123,7 @@ export const ThirdBlockImg = styled.img`
   left: 10%;
   @media screen and (max-width: 700px) {
     opacity: 0 !important;
+    left: -50%;
   }
 `
 export const ThirdBlockText = styled.p`

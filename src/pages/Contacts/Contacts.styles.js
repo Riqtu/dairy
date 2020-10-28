@@ -10,14 +10,16 @@ export const ContactsTextWrapper = styled.div`
   position: relative;
   width: 100%;
   text-align: center;
-  color: white;
+  color: rgba(82, 72, 39, 1);
   font-size: 40pt;
   font-family: 'Uberschrift';
   font-weight: lighter;
   padding-bottom: 120px;
   img {
     width: 5%;
-    filter: invert(1);
+    /* filter: invert(1); */
+    filter: invert(0.4) sepia(1) saturate(1.1) hue-rotate(0deg) brightness(0.58);
+
     margin: 50px 0 150px 0;
   }
 `
@@ -31,6 +33,8 @@ export const ContactsVideoWrapper = styled.div`
 export const ContactsLogo = styled.img`
   position: relative;
   width: 100%;
+  filter: invert(0.4) sepia(1) saturate(1.1) hue-rotate(0deg) brightness(0.58);
+  opacity: 0.9;
 `
 export const Video = styled.video`
   position: absolute;

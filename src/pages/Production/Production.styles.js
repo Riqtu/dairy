@@ -13,7 +13,7 @@ export const SliderWrapper = styled.div`
   left: 10%;
   margin-left: 0;
   margin-top: 120px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 80%;
   }
 `
@@ -21,7 +21,7 @@ export const LogoImg = styled.img`
   position: absolute;
   left: 96%;
   top: 20%;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     display: none;
   }
 `
@@ -37,7 +37,7 @@ export const SliderBlock = styled.div`
     /* width: 100%; */
     text-align: center;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     height: 200px;
   }
 `
@@ -54,7 +54,7 @@ export const NextArrow = styled.button`
   &:hover {
     transform: scale(1.2) translateX(5px);
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     left: 40%;
     top: 116%;
   }
@@ -74,7 +74,7 @@ export const PrevArrow = styled.button`
   &:hover {
     transform: scale(1.2) translateX(-5px) rotate(180deg);
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     left: 0%;
     top: 116%;
   }
@@ -86,7 +86,7 @@ export const AboutWrapper = styled.div`
   height: 200px;
   margin-top: 100px;
   padding: 40px;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     padding: 0;
   }
 `
@@ -97,7 +97,7 @@ export const AboutText = styled.p`
   margin-left: 50%;
   font-size: 10pt;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 70%;
     font-size: 10pt;
     margin-left: 15%;
@@ -118,7 +118,7 @@ export const AboutLogo = styled.div`
   background-position: center;
   opacity: 0.6;
   animation: 10s rotateImg linear infinite;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     top: 80%;
     right: 30%;
   }
@@ -151,7 +151,7 @@ export const SurName = styled.img`
   width: 40%;
   top: 180px;
   z-index: 1;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     top: 80px;
   }
 `
@@ -166,7 +166,7 @@ export const InfoImg = styled.img`
   animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     margin-right: 0;
   }
   @keyframes topWaveImg {
@@ -189,7 +189,7 @@ export const InfoText = styled.p`
   color: #828282;
   font-size: 10pt;
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 770px) {
     width: 70%;
     font-size: 10pt;
     left: 3%;

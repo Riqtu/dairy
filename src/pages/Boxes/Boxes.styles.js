@@ -25,9 +25,12 @@ export const SliderWrapper = styled.div`
 
 export const SliderBlock = styled.div`
   position: relative;
-  height: 650px;
+  height: 850px;
+  @media screen and (max-width: 1442px) {
+    height: 650px;
+  }
   @media screen and (max-width: 1366px) {
-    height: 600px;
+    height: 77vh;
   }
   @media screen and (max-width: 700px) {
     height: 430px;
@@ -38,7 +41,7 @@ export const SliderImg = styled.img`
   width: 30%;
   margin-left: 35%;
   margin-top: 2%;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1040px) {
     width: 70%;
     margin-left: 15%;
     margin-top: 0%;
