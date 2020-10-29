@@ -5,6 +5,9 @@ export const ReservationWrapper = styled.div`
   overflow: hidden;
   color: rgba(82, 72, 39, 1);
   margin-bottom: 400px;
+  @media screen and (max-width: 770px) {
+    margin-bottom: 100px;
+  }
 `
 export const BigImage = styled.img`
   position: relative;

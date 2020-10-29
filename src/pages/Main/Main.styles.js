@@ -142,7 +142,8 @@ export const Contact = styled.div`
 
     float: left;
     @media screen and (max-width: 770px) {
-      display: none;
+      /* display: none; */
+      /* width: 300px; */
     }
   }
   @media screen and (max-width: 1366px) {
@@ -166,8 +167,15 @@ export const Contact = styled.div`
     width: 80%;
     left: 10%;
     h1 {
-      font-size: 30pt;
+      font-size: 25pt;
       font-family: 'Uberschrift';
+      text-align: center;
+    }
+    p {
+      display: none;
+    }
+    img {
+      width: 80%;
     }
   }
 `

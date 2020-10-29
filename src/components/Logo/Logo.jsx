@@ -8,11 +8,17 @@ import { LogoWrapper, ReImageLayer } from './Logo.styles'
 import main from './../../assets/zgl1.png'
 import proizv from './../../assets/proizv2.png'
 import master2 from './../../assets/master2.svg'
+import mainPh from './../../assets/mainPh.png'
+import proizvPh from './../../assets/mainPh2.png'
 
+// import proizv from './../../assets/proizv2.png'
+// import master2 from './../../assets/master2.svg'
 // import rest from './../../assets/rest2.png'
 // import logo from './../../assets/logo1.png'
 
 const reimage = [main, proizv, master2]
+const reimagePhone = [mainPh, proizvPh, master2]
+
 // import rest from './../../assets/rest2.png'
 
 // const layer = [name, production, master]
@@ -38,7 +44,11 @@ const Logo = (props) => {
         ></ImageLayer>
       )} */}
       <ReImageLayer
-        src={reimage[props.page]}
+        src={
+          window.screen.width > 770
+            ? reimage[props.page]
+            : reimagePhone[props.page]
+        }
         margin={props.page === 1 ? '-30' : '-20'}
         alt="Власенко"
         isLoaded={props.isLoaded}

@@ -76,10 +76,17 @@ export const Fork = styled.img`
   animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
   transition: 0.3s;
+  @media screen and (max-width: 770px) {
+    /* min-height: 30vh; */
+    transform: rotate(270deg);
+    left: auto;
+    right: -10%;
+    width: 50%;
+  }
 `
 
 export const Cheese = styled.img`
-  width: 35%;
+  width: 30%;
   top: 0;
   left: auto;
   right: 10%;
@@ -87,4 +94,11 @@ export const Cheese = styled.img`
   animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
   transition: 0.3s;
+
+  @media screen and (max-width: 770px) {
+    /* min-height: 30vh; */
+    top: 30%;
+    left: 0%;
+    right: auto;
+  }
 `

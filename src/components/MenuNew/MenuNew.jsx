@@ -46,8 +46,8 @@ const MenuNew = observer((props) => {
               }}
               delay={3}
               duration={4}
-              margin={40}
-              width={30}
+              margin={window.screen.width > 770 ? 40 : 5}
+              width={window.screen.width > 770 ? 30 : 70}
               alt=""
               disable={mainStore.href === '/'}
             />
@@ -61,8 +61,8 @@ const MenuNew = observer((props) => {
               delay={2}
               duration={3}
               alt=""
-              margin={3}
-              width={60}
+              margin={window.screen.width > 770 ? 3 : -10}
+              width={window.screen.width > 770 ? 60 : 85}
               disable={mainStore.href === '/production'}
             />
           </DelayLink>
@@ -75,8 +75,9 @@ const MenuNew = observer((props) => {
               delay={2}
               duration={4}
               alt=""
-              margin={10}
-              width={35}
+              top={-0.1}
+              margin={window.screen.width > 770 ? 10 : 15}
+              width={window.screen.width > 770 ? 35 : 80}
               disable={mainStore.href === '/boxes'}
             />
           </DelayLink>
@@ -89,9 +90,9 @@ const MenuNew = observer((props) => {
               delay={2}
               duration={3}
               alt=""
-              margin={10}
-              top={10}
-              width={42}
+              margin={window.screen.width > 770 ? 10 : 0}
+              top={window.screen.width > 770 ? 10 : 10}
+              width={window.screen.width > 770 ? 42 : 80}
               disable={mainStore.href === '/contacts'}
             />
           </DelayLink>
@@ -104,8 +105,8 @@ const MenuNew = observer((props) => {
               delay={1}
               duration={5}
               alt=""
-              margin={30}
-              width={50}
+              margin={window.screen.width > 770 ? 30 : 20}
+              width={window.screen.width > 770 ? 50 : 70}
               disable={mainStore.href === '/master-class'}
             />
           </DelayLink>

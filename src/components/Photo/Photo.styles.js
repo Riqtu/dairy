@@ -35,10 +35,11 @@ export const Logo = styled.div`
   }
   @media screen and (max-width: 700px) {
     img {
-      width: 300px;
+      width: 200px;
     }
-    top: 100px;
-    right: 0;
+    top: 150px;
+    right: auto;
+    left: 0;
   }
 `
 
@@ -57,6 +58,7 @@ export const Container = styled.div`
   @media screen and (max-width: 700px) {
     text-align: center;
     margin-top: 205px;
+    min-height: 0px;
   }
 `
 export const LayerWrapper = styled.div`

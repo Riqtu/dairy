@@ -23,7 +23,7 @@ export const LogoWrapper = styled.div`
     min-height: 35vh;
   }
   @media screen and (max-width: 770px) {
-    min-height: 20vh;
+    min-height: 30vh;
   }
 `
 export const FirstLayer = styled.img`
@@ -124,8 +124,8 @@ export const ReImageLayer = styled.img`
   }
   @media screen and (max-width: 770px) {
     transition: 1.8s;
-    left: 5%;
-    /* width: 70px; */
+    left: 0%;
+    width: 100%;
   }
   @keyframes rotateImageLayer {
     0% {
