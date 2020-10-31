@@ -75,9 +75,9 @@ const MenuNew = observer((props) => {
               delay={2}
               duration={4}
               alt=""
-              top={-0.1}
+              top={window.screen.width > 770 ? 5 : -0.1}
               margin={window.screen.width > 770 ? 10 : 15}
-              width={window.screen.width > 770 ? 35 : 80}
+              width={window.screen.width > 770 ? 38 : 80}
               disable={mainStore.href === '/boxes'}
             />
           </DelayLink>
