@@ -20,7 +20,7 @@ export const Links = styled.ul`
   transition: 0.5s;
   opacity: ${(props) => (props.active ? '1' : '0')};
   @media screen and (max-width: 700px) {
-    margin-top: 50%;
+    margin-top: 30%;
   }
 `
 export const Img = styled.img`
@@ -46,7 +46,8 @@ export const Img = styled.img`
     width: 40%;
   }
   @media screen and (max-width: 700px) {
-    margin-top: 15px;
+    margin-top: 30px;
+    width: ${(props) => props.w}%;
   }
 `
 export const ImgLast = styled.img`
@@ -58,7 +59,7 @@ export const ImgLast = styled.img`
     ease infinite alternate;
   transition: 0.3s;
   /* opacity: ${(props) => (props.disable ? '0.5' : '1')}; */
-  float: left;
+  float: ${window.screen.width > 770 && 'left'};
   filter: ${(props) =>
     props.disable
       ? 'invert(0.6) sepia(1) saturate(11.3) hue-rotate(0deg) brightness(1)'
@@ -70,6 +71,7 @@ export const ImgLast = styled.img`
         : 'invert(0.6) sepia(1) saturate(11.3) hue-rotate(0deg) brightness(1)'};
   }
   @media screen and (max-width: 700px) {
-    margin-top: 15px;
+    margin-top: 30px;
+    width: ${(props) => props.w}%;
   }
 `

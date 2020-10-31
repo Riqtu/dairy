@@ -80,8 +80,9 @@ export const Fork = styled.img`
     /* min-height: 30vh; */
     transform: rotate(270deg);
     left: auto;
-    right: -10%;
-    width: 50%;
+    right: -25%;
+    width: 80%;
+    top: -55%;
   }
 `
 
@@ -97,7 +98,8 @@ export const Cheese = styled.img`
 
   @media screen and (max-width: 770px) {
     /* min-height: 30vh; */
-    top: 30%;
+    width: 40%;
+    top: 15%;
     left: 0%;
     right: auto;
   }

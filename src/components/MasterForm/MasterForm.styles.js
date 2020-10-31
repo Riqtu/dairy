@@ -4,7 +4,10 @@ export const MasterFormWrapper = styled.div`
   position: relative;
   overflow: hidden;
   color: rgba(82, 72, 39, 1);
-  margin-bottom: 400px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #f1f0ed;
+
   @media screen and (max-width: 770px) {
     margin-bottom: 100px;
   }

@@ -38,7 +38,13 @@ const Master = (props) => {
       <Logo page={2} invert isLoaded={isLoaded}></Logo>
       <VideoBlockWrapper>
         <VideoBlockContainer>
-          <Video loop="1" muted="1" autoPlay={true} poster="video/plane.jpg">
+          <Video
+            loop="1"
+            muted="1"
+            autoPlay
+            playsInline
+            poster="./../../assets/back12.png"
+          >
             <source src={video} type="video/mp4" />
           </Video>
         </VideoBlockContainer>

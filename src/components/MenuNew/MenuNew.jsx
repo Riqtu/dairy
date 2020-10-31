@@ -76,7 +76,7 @@ const MenuNew = observer((props) => {
               duration={4}
               alt=""
               top={window.screen.width > 770 ? 5 : -0.1}
-              margin={window.screen.width > 770 ? 10 : 15}
+              margin={window.screen.width > 770 ? 10 : 20}
               width={window.screen.width > 770 ? 38 : 80}
               disable={mainStore.href === '/boxes'}
             />

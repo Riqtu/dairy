@@ -34,6 +34,7 @@ const Menu = observer((props) => {
               }}
               delay={3}
               duration={4}
+              w={50}
               alt=""
               disable={mainStore.href === '/'}
             />
@@ -47,7 +48,8 @@ const Menu = observer((props) => {
               delay={2}
               duration={3}
               alt=""
-              margin={40}
+              w={70}
+              margin={window.screen.width > 770 ? 40 : ''}
               disable={mainStore.href === '/production'}
             />
           </DelayLink>
@@ -59,8 +61,9 @@ const Menu = observer((props) => {
               onClick={() => checkHref('/master-class')}
               delay={1}
               duration={5}
+              w={70}
               alt=""
-              margin={20}
+              margin={window.screen.width > 770 ? 20 : ''}
               disable={mainStore.href === '/master-class'}
             />
           </DelayLink>
@@ -72,8 +75,9 @@ const Menu = observer((props) => {
               onClick={() => checkHref('/boxes')}
               delay={2}
               duration={4}
+              w={40}
               alt=""
-              margin={10}
+              margin={window.screen.width > 770 ? 10 : ''}
               disable={mainStore.href === '/boxes'}
             />
           </DelayLink>
@@ -85,8 +89,9 @@ const Menu = observer((props) => {
               onClick={() => checkHref('/contacts')}
               delay={2}
               duration={3}
+              w={50}
               alt=""
-              margin={20}
+              margin={window.screen.width > 770 ? 20 : ''}
               disable={mainStore.href === '/contacts'}
             />
           </DelayLink>
