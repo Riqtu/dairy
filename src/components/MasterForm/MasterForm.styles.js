@@ -4,9 +4,10 @@ export const MasterFormWrapper = styled.div`
   position: relative;
   overflow: hidden;
   color: rgba(82, 72, 39, 1);
-  margin-bottom: 0px;
-  background-color: rgba(241, 240, 237, 1);
-  padding-top: 200px;
+  margin-bottom: 400px;
+  @media screen and (max-width: 770px) {
+    margin-bottom: 100px;
+  }
 `
 export const BigImage = styled.img`
   position: relative;
@@ -26,6 +27,7 @@ export const ReservationLogo = styled.img`
   @media screen and (max-width: 770px) {
     width: 300px;
     top: 250px;
+    margin-bottom: 140px;
   }
 `
 
@@ -54,8 +56,12 @@ export const Time = styled.div`
   @media screen and (max-width: 770px) {
     width: 80%;
     height: 150px;
+    left: 0;
+    /* background-color: blue; */
     label {
-      top: 50%;
+      top: 100%;
+      left: auto;
+      right: -7%;
     }
   }
 `
@@ -78,12 +84,18 @@ export const TimeInput = styled.input`
   @media screen and (max-width: 1366px) {
     font-size: 120pt;
   }
+  @media screen and (max-width: 1240px) {
+    font-size: 100pt;
+  }
   /* border-bottom: 1px solid black; */
   @media screen and (max-width: 770px) {
-    font-size: 100pt;
+    font-size: 80pt;
     margin-top: 50px;
     height: auto;
     line-height: normal;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 65pt;
   }
 `
 export const Line = styled.div`
@@ -120,9 +132,14 @@ export const Date = styled.div`
   }
   @media screen and (max-width: 770px) {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 15%;
     height: 90px;
     top: 0;
+    margin-top: -60px;
+    label {
+      left: -10%;
+      top: 50%;
+    }
   }
 `
 export const DateInput = styled.input`
@@ -153,6 +170,9 @@ export const DateInput = styled.input`
 
     line-height: normal;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 55pt;
+  }
 `
 
 export const Name = styled.div`
@@ -160,15 +180,15 @@ export const Name = styled.div`
   margin-top: 0px;
   width: 45%;
   height: ${(props) => (props.len < 6 ? '270px' : '170px')};
-  @media screen and (min-width: 1600px) {
-    height: ${(props) => (props.len < 6 ? '300px' : '170px')};
-  }
   /* background-color: blue; */
   margin-left: 17%;
   transition: 0.6s;
   /* left: auto;
   right: 0; */
   float: left;
+  @media screen and (min-width: 1600px) {
+    height: ${(props) => (props.len < 6 ? '300px' : '170px')};
+  }
   label {
     line-height: 0;
     opacity: 0.5;
@@ -183,17 +203,18 @@ export const Name = styled.div`
   }
   @media screen and (max-width: 770px) {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 0%;
     height: 90px;
     top: 0;
     position: relative;
-    margin-top: 80px;
+    margin-top: 30px;
     label {
       line-height: 0;
       opacity: 0.5;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: auto;
+      right: -7%;
     }
   }
 `
@@ -205,9 +226,6 @@ export const NameInput = styled.input`
   background-color: transparent;
   border: none;
   font-size: ${(props) => (props.len < 5 ? '150pt' : '90pt')};
-  @media screen and (min-width: 1600px) {
-    height: ${(props) => (props.len < 6 ? '300px' : '170px')};
-  }
   line-height: 0;
   margin-top: -20px;
   margin-left: 70px;
@@ -222,7 +240,11 @@ export const NameInput = styled.input`
   @media screen and (max-width: 1366px) {
     width: 90%;
     height: 67%;
-    font-size: ${(props) => (props.len < 5 ? '100pt' : '70pt')};
+    font-size: ${(props) => (props.len < 5 ? '120pt' : '70pt')};
+  }
+  @media screen and (max-width: 1240px) {
+    font-size: ${(props) => (props.len < 5 ? '100pt' : '50pt')};
+    width: 90%;
   }
   @media screen and (max-width: 770px) {
     margin-left: 0;
@@ -231,6 +253,9 @@ export const NameInput = styled.input`
     font-size: 60pt;
     height: auto;
     line-height: normal;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 54pt;
   }
 `
 
@@ -268,17 +293,17 @@ export const Phone = styled.div`
   }
   @media screen and (max-width: 770px) {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 22%;
     height: 90px;
     top: 0;
     position: relative;
-    margin-top: 80px;
+    margin-top: 20px;
     label {
       line-height: 0;
       opacity: 0.5;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 73%;
+      left: -22%;
     }
   }
 `
@@ -304,17 +329,23 @@ export const PhoneInput = styled.input`
   color: rgba(82, 72, 39, 1);
 
   @media screen and (max-width: 1366px) {
-    font-size: 40pt;
+    font-size: 60pt;
+    width: 90%;
+  }
+  @media screen and (max-width: 1240px) {
+    font-size: 45pt;
     width: 90%;
   }
   @media screen and (max-width: 770px) {
     margin-left: 0;
     margin-top: 40px;
     padding-left: 20px;
-    font-size: 60pt;
     height: auto;
     line-height: normal;
     font-size: 26pt;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 20pt;
   }
 `
 
@@ -322,6 +353,7 @@ export const Submit = styled.button`
   position: relative;
   border: none;
   background-color: transparent;
+
   cursor: pointer;
   margin-top: 120px;
   left: 10%;
@@ -332,18 +364,28 @@ export const Submit = styled.button`
   transition: 0.3s;
   outline: none;
   &:hover {
-    transform: scale(1.2) rotate(-20deg);
+    transform: ${(props) => (props.sub ? '' : 'scale(1.2) rotate(-20deg)')};
   }
+  transform: ${(props) => (props.sub ? 'scale(0.3) rotate(-120deg);' : '')};
+
   @media screen and (max-width: 1366px) {
     img {
       width: 150px;
     }
   }
+  @media screen and (max-width: 1240px) {
+    img {
+      width: 130px;
+    }
+    left: 0;
+    margin-top: 60%;
+  }
   @media screen and (max-width: 770px) {
     img {
-      width: 200px;
+      width: 150px;
     }
     left: calc(50% - 100px);
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 `

@@ -119,6 +119,8 @@ export const AboutLogo = styled.div`
   opacity: 0.6;
   animation: 10s rotateImg linear infinite;
   @media screen and (max-width: 770px) {
+    width: 52px;
+    height: 50px;
     top: 80%;
     right: 30%;
   }

@@ -33,7 +33,7 @@ export const SliderBlock = styled.div`
     height: 77vh;
   }
   @media screen and (max-width: 700px) {
-    height: 430px;
+    min-height: 430px;
     /* width: 100%; */
   }
 `

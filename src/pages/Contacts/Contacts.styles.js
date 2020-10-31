@@ -22,6 +22,9 @@ export const ContactsTextWrapper = styled.div`
 
     margin: 50px 0 150px 0;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 30pt;
+  }
 `
 export const ContactsVideoWrapper = styled.div`
   position: fixed;

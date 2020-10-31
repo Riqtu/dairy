@@ -101,7 +101,7 @@ const Photo = (props) => {
         key={index}
         duration={Math.random() * (4 - 2) + 2}
         delay={Math.floor(Math.random() * 1)}
-        opacity={index % 2 !== 0 ? '0.75' : '1'}
+        // opacity={index % 2 !== 0 ? '0.75' : '1'}
         swiped={swiped}
       >
         <Layer src={el.img} alt="" top={el.top}></Layer>

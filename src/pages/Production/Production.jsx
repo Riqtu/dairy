@@ -23,8 +23,10 @@ import { Logo, Header, Cheese, MasterForm, Preloader } from '../../components'
 import Slider from 'react-slick'
 import Fade from 'react-reveal/Fade'
 
-import rest from './../../assets/qwer.png'
-import rest1 from './../../assets/rest1.png'
+import rest from './../../assets/gal1.jpeg'
+import rest1 from './../../assets/gal2.jpeg'
+import rest2 from './../../assets/gal3.jpeg'
+
 import vlas from './../../assets/vlas.svg'
 import name from './../../assets/sirovarnya1.svg'
 import vlasenko from './../../assets/vlasenko3.svg'
@@ -80,6 +82,7 @@ const Production = (props) => {
           <Slider {...settings}>
             <SliderBlock back={rest} id="ldld"></SliderBlock>
             <SliderBlock back={rest1}></SliderBlock>
+            <SliderBlock back={rest2}></SliderBlock>
           </Slider>
           <LogoImg src={vlas} alt="" />
         </Fade>

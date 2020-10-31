@@ -29,6 +29,9 @@ export const Links = styled.ul`
   list-style-type: none;
   font-size: 0.7rem;
   line-height: 17px;
+  @media screen and (max-width: 320px) {
+    display: none;
+  }
   a {
     color: black;
     text-decoration: none;

@@ -56,8 +56,12 @@ export const Time = styled.div`
   @media screen and (max-width: 770px) {
     width: 80%;
     height: 150px;
+    left: 0;
+    /* background-color: blue; */
     label {
-      top: 50%;
+      top: 100%;
+      left: auto;
+      right: -7%;
     }
   }
 `
@@ -85,10 +89,13 @@ export const TimeInput = styled.input`
   }
   /* border-bottom: 1px solid black; */
   @media screen and (max-width: 770px) {
-    font-size: 100pt;
+    font-size: 80pt;
     margin-top: 50px;
     height: auto;
     line-height: normal;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 65pt;
   }
 `
 export const Line = styled.div`
@@ -125,9 +132,14 @@ export const Date = styled.div`
   }
   @media screen and (max-width: 770px) {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 15%;
     height: 90px;
     top: 0;
+    margin-top: -60px;
+    label {
+      left: -10%;
+      top: 50%;
+    }
   }
 `
 export const DateInput = styled.input`
@@ -157,6 +169,9 @@ export const DateInput = styled.input`
     height: auto;
 
     line-height: normal;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 55pt;
   }
 `
 
@@ -188,17 +203,18 @@ export const Name = styled.div`
   }
   @media screen and (max-width: 770px) {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 0%;
     height: 90px;
     top: 0;
     position: relative;
-    margin-top: 80px;
+    margin-top: 30px;
     label {
       line-height: 0;
       opacity: 0.5;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: auto;
+      right: -7%;
     }
   }
 `
@@ -238,6 +254,9 @@ export const NameInput = styled.input`
     height: auto;
     line-height: normal;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 54pt;
+  }
 `
 
 export const Phone = styled.div`
@@ -274,17 +293,17 @@ export const Phone = styled.div`
   }
   @media screen and (max-width: 770px) {
     width: 80%;
-    margin-left: 10%;
+    margin-left: 22%;
     height: 90px;
     top: 0;
     position: relative;
-    margin-top: 80px;
+    margin-top: 20px;
     label {
       line-height: 0;
       opacity: 0.5;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 73%;
+      left: -22%;
     }
   }
 `
@@ -325,6 +344,9 @@ export const PhoneInput = styled.input`
     line-height: normal;
     font-size: 26pt;
   }
+  @media screen and (max-width: 320px) {
+    font-size: 20pt;
+  }
 `
 
 export const Submit = styled.button`
@@ -360,9 +382,10 @@ export const Submit = styled.button`
   }
   @media screen and (max-width: 770px) {
     img {
-      width: 200px;
+      width: 150px;
     }
     left: calc(50% - 100px);
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 `

@@ -31,10 +31,10 @@ export const Img = styled.img`
     ease infinite alternate; */
   transition: 0.3s;
   /* opacity: ${(props) => (props.disable ? '0.5' : '1')}; */
-  filter: ${(props) =>
+  /* filter: ${(props) =>
     props.disable
       ? 'invert(0.6) sepia(1) saturate(11.3) hue-rotate(0deg) brightness(1)'
-      : ''};
+      : ''}; */
   &:hover {
     filter: ${(props) =>
       props.disable

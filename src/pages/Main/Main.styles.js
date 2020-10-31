@@ -87,7 +87,7 @@ export const SecondAboutWrapper = styled.div`
 export const SecondAboutText = styled.p`
   position: relative;
   width: 40%;
-  font-style: italic;
+  /* font-style: italic; */
   margin-left: 8%;
   color: rgba(130, 130, 130, 1);
   font-size: 10pt;
@@ -166,6 +166,7 @@ export const Contact = styled.div`
   @media screen and (max-width: 770px) {
     width: 80%;
     left: 10%;
+    margin-bottom: 50px;
     h1 {
       font-size: 25pt;
       font-family: 'Uberschrift';

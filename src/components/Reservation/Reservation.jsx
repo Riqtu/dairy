@@ -18,6 +18,8 @@ import {
 
 // import img5 from './../../assets/img5.png'
 import submit from './../../assets/submit.svg'
+import submitOk from './../../assets/submitOk.svg'
+
 import reservation from './../../assets/reserv.svg'
 
 import InputMask from 'react-input-mask'
@@ -113,8 +115,13 @@ const Reservation = (props) => {
               <PhoneInput disableUnderline />
             </InputMask>
           </Phone>
-          <Submit sub={sub}>
-            <img src={submit} sub={sub} alt="" onClick={() => setSub(true)} />
+          <Submit>
+            <img
+              src={sub ? submitOk : submit}
+              sub={sub}
+              alt=""
+              onClick={() => setSub(true)}
+            />
           </Submit>
         </Form>
       </Fade>
