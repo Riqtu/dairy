@@ -34,7 +34,9 @@ export const ReservationLogo = styled.img`
 export const Form = styled.form`
   position: relative;
   width: 100%;
-
+  @media screen and (max-width: 770px) {
+    margin-top: -150px;
+  }
   /* height: 100vh; */
 `
 
@@ -387,5 +389,17 @@ export const Submit = styled.button`
     left: calc(50% - 100px);
     margin-top: 50px;
     margin-bottom: 100px;
+  }
+`
+
+export const Fork = styled.img`
+  transform: rotate(20deg);
+  display: none;
+  @media screen and (max-width: 700px) {
+    display: block;
+    width: 80%;
+    margin-left: 25%;
+    margin-top: 50px;
+    position: relative;
   }
 `

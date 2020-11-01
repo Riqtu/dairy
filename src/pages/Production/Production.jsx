@@ -98,6 +98,7 @@ const Production = (props) => {
           </AboutText>
         </Fade>
       </AboutWrapper>
+      {window.screen.width < 700 && <Cheese></Cheese>}
       <InfoWrapper>
         <Fade bottom cascade>
           <Name src={name} alt=""></Name>
@@ -135,7 +136,7 @@ const Production = (props) => {
           </InfoText>
         </Fade>
       </InfoWrapper>
-      <Cheese></Cheese>
+      {window.screen.width > 700 && <Cheese></Cheese>}
       <MasterWrapper>
         <MasterImg src={msk} alt=""></MasterImg>
         <MasterLogo src={mskLogo} alt=""></MasterLogo>

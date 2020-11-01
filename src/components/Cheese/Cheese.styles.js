@@ -8,6 +8,7 @@ export const CheeseWrapper = styled.div`
   @media screen and (max-width: 700px) {
     width: 90%;
     left: 5%;
+    margin-top: 0;
   }
 `
 export const Line = styled.img`

@@ -9,7 +9,7 @@ import main from './../../assets/zgl1.png'
 import proizv from './../../assets/proizv2.png'
 import master2 from './../../assets/master2.svg'
 import mainPh from './../../assets/mainPh.png'
-import proizvPh from './../../assets/mainPh2.png'
+import proizvPh from './../../assets/proizv3.png'
 
 // import proizv from './../../assets/proizv2.png'
 // import master2 from './../../assets/master2.svg'

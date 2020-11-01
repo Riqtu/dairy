@@ -12,8 +12,9 @@ export const AboutWrapper = styled.div`
   margin-top: 100px;
   padding: 40px;
 
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 700px) {
     padding: 0;
+    margin-bottom: -100px;
     /* margin-top: 300vh; */
   }
 `
@@ -25,10 +26,10 @@ export const AboutText = styled.p`
   font-size: 10pt;
   color: rgba(130, 130, 130, 1);
 
-  @media screen and (max-width: 770px) {
-    width: 70%;
+  @media screen and (max-width: 700px) {
+    width: 40%;
     font-size: 10pt;
-    margin-left: 15%;
+    margin-left: 30%;
     margin-top: 50px;
     top: 20px;
   }
@@ -41,7 +42,7 @@ export const AboutLine = styled.div`
   height: 0px;
   border: 1px solid #797979;
   @media screen and (max-width: 770px) {
-    margin-top: 0;
+    margin-top: 30px;
   }
 `
 export const AboutLogo = styled.div`

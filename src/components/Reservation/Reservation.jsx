@@ -14,16 +14,18 @@ import {
   Phone,
   PhoneInput,
   Submit,
+  Fork,
 } from './Reservation.styles'
 
 // import img5 from './../../assets/img5.png'
 import submit from './../../assets/submit.svg'
 import submitOk from './../../assets/submitOk.svg'
 
-import reservation from './../../assets/reserv.svg'
+import reservation from './../../assets/rezerv2.svg'
 
 import InputMask from 'react-input-mask'
 import Fade from 'react-reveal/Fade'
+import fork from './../../assets/fork.png'
 
 const Reservation = (props) => {
   const [time, setTime] = useState('')
@@ -42,6 +44,7 @@ const Reservation = (props) => {
           style={{ display: 'none' }}
         ></iframe>
         <ReservationLogo src={reservation} alt="Картинка"></ReservationLogo>
+        <Fork src={fork} alt=""></Fork>
         <Form
           action="https://formspree.io/f/mvovkgpz"
           method="POST"

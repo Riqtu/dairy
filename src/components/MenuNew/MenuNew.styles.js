@@ -76,7 +76,7 @@ export const Fork = styled.img`
   animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
     ease infinite alternate;
   transition: 0.3s;
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 700px) {
     /* min-height: 30vh; */
     transform: rotate(270deg);
     left: auto;

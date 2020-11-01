@@ -15,6 +15,11 @@ export const SliderWrapper = styled.div`
   margin-top: 120px;
   @media screen and (max-width: 770px) {
     width: 80%;
+    margin-top: 500px;
+  }
+  @media screen and (max-width: 770px) {
+    width: 80%;
+    margin-top: 120px;
   }
 `
 export const LogoImg = styled.img`
@@ -55,7 +60,7 @@ export const NextArrow = styled.button`
     transform: scale(1.2) translateX(5px);
   }
   @media screen and (max-width: 770px) {
-    left: 40%;
+    left: 25%;
     top: 116%;
   }
 `
@@ -98,9 +103,9 @@ export const AboutText = styled.p`
   font-size: 10pt;
 
   @media screen and (max-width: 770px) {
-    width: 70%;
-    font-size: 10pt;
-    margin-left: 15%;
+    width: 50%;
+    font-size: 8pt;
+    margin-left: 40%;
     margin-top: 40px;
   }
 `
@@ -121,7 +126,7 @@ export const AboutLogo = styled.div`
   @media screen and (max-width: 770px) {
     width: 52px;
     height: 50px;
-    top: 80%;
+    top: 0%;
     right: 30%;
   }
   @keyframes rotateImg {
@@ -139,6 +144,9 @@ export const InfoWrapper = styled.div`
   width: 100%;
   margin-top: 70px;
   padding-left: 20%;
+  @media screen and (max-width: 770px) {
+    padding-bottom: 100px;
+  }
 `
 export const Name = styled.img`
   position: absolute;
@@ -192,9 +200,9 @@ export const InfoText = styled.p`
   font-size: 10pt;
 
   @media screen and (max-width: 770px) {
-    width: 70%;
-    font-size: 10pt;
-    left: 3%;
+    width: 40%;
+    font-size: 8pt;
+    left: 30%;
     top: 250px;
   }
 `
