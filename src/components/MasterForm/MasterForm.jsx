@@ -7,6 +7,7 @@ import {
   Phone,
   PhoneInput,
   Submit,
+  ReservationLogo,
 } from './MasterForm.styles'
 
 import submit from './../../assets/submit.svg'
@@ -14,6 +15,7 @@ import submitOk from './../../assets/submitOk.svg'
 
 import InputMask from 'react-input-mask'
 import Fade from 'react-reveal/Fade'
+import zapis from './../../assets/zapis.svg'
 
 const MasterForm = (props) => {
   const [name, setName] = useState('')
@@ -22,6 +24,7 @@ const MasterForm = (props) => {
 
   return (
     <MasterFormWrapper>
+      <ReservationLogo src={zapis} alt=""></ReservationLogo>
       <Fade bottom cascade>
         <iframe
           title="formPost"

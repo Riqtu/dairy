@@ -10,6 +10,7 @@ import {
   SecondAboutWrapper,
   Contact,
   Footer,
+  AboutPhone,
 } from './Main.styles'
 
 import {
@@ -61,11 +62,21 @@ const Main = (props) => {
           <SecondAboutText>
             Сыроварня Власенко в самом центре Ростова-на-Дону – это не только
             производство сыра и лавка натуральных продуктов, это еще и уютный
-            камерный зал ресторана
+            камерный зал ресторана <br />
+            {window.screen.width > 700 &&
+              `Чем не идеальное место для спокойного проведения досуга, деловой
+               или личной встречи, праздного торжества, семейного или романтического ужина?`}
           </SecondAboutText>
         </Fade>
       </SecondAboutWrapper>
       <Photo></Photo>
+      {window.screen.width < 700 && (
+        <AboutPhone>
+          Чем не идеальное место для спокойного проведения досуга, деловой или
+          личной встречи, праздного торжества, семейного или романтического
+          ужина?
+        </AboutPhone>
+      )}
       <Reservation></Reservation>
       <Contact>
         <Fade bottom text>

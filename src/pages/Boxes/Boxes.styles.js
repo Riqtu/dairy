@@ -77,8 +77,9 @@ export const NextArrow = styled.button`
   }
   @media screen and (max-width: 700px) {
     left: auto;
-    right: 10%;
-    top: 35%;
+    right: 24%;
+    top: auto;
+    bottom: 2%;
   }
 `
 export const PrevArrow = styled.button`
@@ -97,8 +98,9 @@ export const PrevArrow = styled.button`
     transform: scale(1.2) translateX(-5px) rotate(180deg);
   }
   @media screen and (max-width: 700px) {
-    left: 10%;
-    top: 35%;
+    left: 24%;
+    top: auto;
+    bottom: 2%;
   }
 `
 export const Circle = styled.div`
@@ -149,8 +151,25 @@ export const SliderTitle = styled.div`
     margin-top: 0px;
   }
   @media screen and (max-width: 700px) {
-    width: 100%;
-    margin-left: 0%;
+    bottom: 8%;
+    h1 {
+      font-size: 25pt;
+    }
+    width: 80%;
+    margin-left: 10%;
     margin-top: 0%;
   }
+`
+
+export const Number = styled.div`
+  font-family: Uberschrift;
+  font-style: normal;
+  font-weight: normal;
+  position: absolute;
+  font-size: 20pt;
+  top: auto;
+  bottom: 1%;
+  /* background-color: blue; */
+  width: 100%;
+  text-align: center;
 `

@@ -8,6 +8,7 @@ import {
   SliderImg,
   SliderTitle,
   Circle,
+  Number,
 } from './Boxes.styles'
 import { Header, Preloader } from '../../components'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
@@ -58,38 +59,38 @@ const Boxes = (props) => {
     },
     {
       img: b2,
-      title: `КОРЗИНА`,
+      title: `КОРЗИНА 1200p`,
       text: `
       Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий сыр с благородной плесенью / Твердый выдержанный сыр / Испанские оливки`,
     },
     {
       img: b3,
-      title: `KORZINA3`,
+      title: `КОРЗИНА 1200p`,
       text: `Прошутто / Хлебные палочки / Сыр Дон Пеппер / Качотта / Мягкий сыр с благородной плесенью / Твердый выдержанный сыр / Испанские оливки`,
     },
     {
       img: b4,
-      title: `KORZINA 3200p`,
+      title: `КОРЗИНА 3200p`,
       text: `Гриссини / сыр Качотта / Сыр Дон Пеппер / Мягкий сыр с белой плесенью / Твердый выдержанный сыр / Прошутто / Оливки / Сладкий перец фаршированный сыром`,
     },
     {
       img: b5,
-      title: `KORZINA 3000p`,
+      title: `КОРЗИНА 3000p`,
       text: `Сыр Качотта с трюфелем / Сыр Качотта с чабером / Сыр Дон Пеппер / Мягкий сыр Валансе / Мягкий сыр Реблошон / Мягкий сыр Бри / Ягодный джем / Мармелад`,
     },
     {
       img: b6,
-      title: `KORZINA 3500p `,
+      title: `КОРЗИНА 3500p `,
       text: `Сыр полутвердый Провооне / Сыр Качотта с вяленными томатами /Сыр Качотта с паприкой / Полутвердый сыр Хаварти / Ягодный джем / Перец фаршированный мягким сыром / Оливки `,
     },
     {
       img: b7,
-      title: `KORZINA 4800P`,
+      title: `КОРЗИНА 4800p`,
       text: `Сыр полутвердый Проволоне / Сыр Дон Пеппер / Сыр Качотта с трюфелем / Мягкий сыр Катар / Твердый сыр Канестрато / Гриссини / Прошутто / Вяленые томаты / Соус песто`,
     },
     {
       img: b8,
-      title: `KORZINA 4600p `,
+      title: `КОРЗИНА 4600p `,
       text: `Сыр Халуми / Сыр Дон Пеппер / Сыр с голубой плесенью Горгонзола /Мягкий сыр Реблошон / сыр Качотта / Полутвердый сыр Хаварти / Прошутто / Вяленные томаты / Сладкий перец фаршированный мягким сыром / Оливки / Соус Песто / Сливочное масло с вяленными томатами`,
     },
   ]
@@ -105,7 +106,7 @@ const Boxes = (props) => {
     prevArrow: <SamplePrevArrow />,
   }
 
-  const basketsMap = baskets.map((el, index) => {
+  const basketsMap = baskets.map((el, index, arr) => {
     return (
       <SliderBlock>
         <SliderImg src={el.img} alt="" />
@@ -113,6 +114,9 @@ const Boxes = (props) => {
           <h1>{el.title}</h1>
           <p>{el.text}</p>
         </SliderTitle>
+        <Number>
+          {index + 1}/{arr.length}
+        </Number>
       </SliderBlock>
     )
   })
@@ -133,7 +137,7 @@ const Boxes = (props) => {
             {basketsMap}
           </Slider>
         </Fade>
-      </SliderWrapper>
+      </SliderWrapper>{' '}
     </BoxesWrapper>
   )
 }

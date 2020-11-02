@@ -34,6 +34,16 @@ export const AboutText = styled.p`
     top: 20px;
   }
 `
+export const AboutPhone = styled.p`
+  @media screen and (max-width: 700px) {
+    width: 50%;
+    font-size: 10pt;
+    margin-left: 30%;
+    /* margin-top: 50px; */
+    /* top: 20px; */
+    margin-bottom: -50px;
+  }
+`
 export const AboutLine = styled.div`
   position: absolute;
   width: 46.25px;

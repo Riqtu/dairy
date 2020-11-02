@@ -29,7 +29,7 @@ export const Links = styled.ul`
   list-style-type: none;
   font-size: 0.7rem;
   line-height: 17px;
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 770px) {
     display: none;
   }
   a {

@@ -124,7 +124,11 @@ export const Date = styled.img`
   /* z-index: 100; */
   /* margin-top: 50px; */
   @media screen and (max-width: 700px) {
-    display: none;
+    width: 250px;
+    top: auto;
+    left: 3%;
+    bottom: 90px;
+    /* display: none; */
   }
 `
 
@@ -147,5 +151,6 @@ export const Button = styled.button`
   @media screen and (max-width: 700px) {
     right: ${(props) => (props.prev ? '55%' : '35%')};
     bottom: -40px;
+    display: none;
   }
 `

@@ -25,7 +25,7 @@ import reservation from './../../assets/rezerv2.svg'
 
 import InputMask from 'react-input-mask'
 import Fade from 'react-reveal/Fade'
-import fork from './../../assets/fork.png'
+import fork from './../../assets/forkPhone.png'
 
 const Reservation = (props) => {
   const [time, setTime] = useState('')

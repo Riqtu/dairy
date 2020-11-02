@@ -18,6 +18,7 @@ export const Line = styled.img`
   @media screen and (max-width: 700px) {
     left: 40%;
     opacity: 0.4;
+    z-index: 1;
   }
 `
 export const FirstBlock = styled.div`
@@ -143,7 +144,7 @@ export const ThirdBlock = styled.div`
 `
 export const ThirdBlockLogo = styled.img`
   position: absolute;
-  width: 40%;
+  width: 50%;
   left: auto;
   right: 0;
   top: 10%;

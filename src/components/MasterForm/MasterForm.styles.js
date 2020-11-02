@@ -24,8 +24,8 @@ export const BigImage = styled.img`
 `
 export const ReservationLogo = styled.img`
   position: relative;
-  width: 770px;
-  left: 0%;
+  width: 570px;
+  left: 10%;
   top: 0px;
   margin-top: 80px;
   margin-bottom: 120px;

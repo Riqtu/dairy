@@ -235,6 +235,7 @@ export const NameInput = styled.input`
   /* padding-left: 20px; */
   outline: none;
   font-family: 'Uberschrift';
+  text-transform: uppercase !important;
   border-bottom: 1px solid black;
   line-height: normal;
   color: rgba(82, 72, 39, 1);
@@ -393,13 +394,14 @@ export const Submit = styled.button`
 `
 
 export const Fork = styled.img`
-  transform: rotate(20deg);
+  transform: rotate(180deg) !important;
   display: none;
   @media screen and (max-width: 700px) {
     display: block;
+
     width: 80%;
     margin-left: 25%;
-    margin-top: 50px;
+    margin-top: 60px;
     position: relative;
   }
 `
