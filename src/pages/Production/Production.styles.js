@@ -200,10 +200,10 @@ export const InfoText = styled.p`
   font-size: 10pt;
 
   @media screen and (max-width: 770px) {
-    width: 40%;
+    width: 60%;
     font-size: 8pt;
-    left: 30%;
-    top: 250px;
+    left: 10%;
+    top: 280px;
   }
 `
 

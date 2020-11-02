@@ -128,6 +128,9 @@ export const Circle = styled.div`
       transform: rotate(360deg);
     }
   }
+  @media screen and (min-height: 700px) {
+    top: 18%;
+  }
 `
 export const SliderTitle = styled.div`
   position: absolute;

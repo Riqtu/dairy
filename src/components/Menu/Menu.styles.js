@@ -28,8 +28,9 @@ export const Img = styled.img`
   position: relative;
   margin-left: ${(props) => props.margin}%;
   margin-top: 50px;
-  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
-    ease infinite alternate;
+  /* animation: topWaveImg ${(props) => props.duration}s ${(props) =>
+    props.delay}s
+    ease infinite alternate; */
   transition: 0.3s;
   filter: ${(props) =>
     props.disable
