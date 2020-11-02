@@ -18,6 +18,7 @@ import {
   MasterWrapper,
   MasterLogo,
   MasterVlas,
+  AboutTextMaster,
 } from './Production.styles'
 import { Logo, Header, Cheese, MasterForm, Preloader } from '../../components'
 import Slider from 'react-slick'
@@ -25,7 +26,7 @@ import Fade from 'react-reveal/Fade'
 
 import rest from './../../assets/gal1.jpeg'
 import rest1 from './../../assets/gal2.jpeg'
-import rest2 from './../../assets/gal3.jpeg'
+import rest2 from './../../assets/gal3.png'
 
 import vlas from './../../assets/vlas.svg'
 import name from './../../assets/sirovarnya1.svg'
@@ -143,11 +144,11 @@ const Production = (props) => {
       </MasterWrapper>
       <AboutWrapper>
         <Fade bottom>
-          <AboutText>
+          <AboutTextMaster>
             Под чутким руководством основательницы проекта Ирины Павловны
             Власенко вы можете попробовать себя в роли сыровара, приготовить 2
             молодых рассольных сыра – моцареллу и итальянский деревенский сыр
-          </AboutText>
+          </AboutTextMaster>
         </Fade>
       </AboutWrapper>
       <MasterForm></MasterForm>

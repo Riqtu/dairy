@@ -41,6 +41,10 @@ export const SliderImg = styled.img`
   width: 30%;
   margin-left: 35%;
   margin-top: 2%;
+  @media screen and (max-width: 1366px) {
+    width: 25%;
+    margin-left: 37.5%;
+  }
   @media screen and (max-width: 1040px) {
     width: 70%;
     margin-left: 15%;
@@ -162,14 +166,18 @@ export const SliderTitle = styled.div`
 `
 
 export const Number = styled.div`
-  font-family: Uberschrift;
-  font-style: normal;
-  font-weight: normal;
-  position: absolute;
-  font-size: 20pt;
-  top: auto;
-  bottom: 1%;
-  /* background-color: blue; */
-  width: 100%;
-  text-align: center;
+  display: none;
+  @media screen and (max-width: 700px) {
+    display: block;
+    font-family: Uberschrift;
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    font-size: 20pt;
+    top: auto;
+    bottom: 1%;
+    /* background-color: blue; */
+    width: 100%;
+    text-align: center;
+  }
 `

@@ -86,7 +86,7 @@ export const TimeInput = styled.input`
   @media screen and (max-width: 1366px) {
     font-size: 120pt;
   }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1280px) {
     font-size: 100pt;
   }
   /* border-bottom: 1px solid black; */
@@ -162,7 +162,7 @@ export const DateInput = styled.input`
   @media screen and (max-width: 1366px) {
     font-size: 120pt;
   }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1280px) {
     font-size: 100pt;
   }
   /* border-bottom: 1px solid black; */
@@ -245,7 +245,7 @@ export const NameInput = styled.input`
     height: 67%;
     font-size: ${(props) => (props.len < 5 ? '120pt' : '70pt')};
   }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1280px) {
     font-size: ${(props) => (props.len < 5 ? '100pt' : '50pt')};
     width: 90%;
   }
@@ -335,7 +335,7 @@ export const PhoneInput = styled.input`
     font-size: 60pt;
     width: 90%;
   }
-  @media screen and (max-width: 1240px) {
+  @media screen and (max-width: 1280px) {
     font-size: 45pt;
     width: 90%;
   }
@@ -367,7 +367,7 @@ export const Submit = styled.button`
   transition: 0.3s;
   outline: none;
   &:hover {
-    transform: ${(props) => (props.sub ? '' : 'scale(1.2) rotate(-20deg)')};
+    transform: ${(props) => (props.sub ? '' : 'scale(1.06) rotate(-20deg)')};
   }
   transform: ${(props) => (props.sub ? 'scale(0.3) rotate(-120deg);' : '')};
 

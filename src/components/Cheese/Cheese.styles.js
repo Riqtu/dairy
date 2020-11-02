@@ -14,7 +14,7 @@ export const CheeseWrapper = styled.div`
 export const Line = styled.img`
   position: absolute;
   left: 55%;
-  z-index: 2;
+  z-index: 1;
   @media screen and (max-width: 700px) {
     left: 40%;
     opacity: 0.4;
@@ -73,6 +73,19 @@ export const FirstBlockText = styled.p`
     margin-top: 10px;
   }
 `
+export const FirstBlockTextAddition = styled.p`
+  position: absolute;
+  left: 170%;
+  top: 0%;
+  font-size: 10pt;
+  width: 60%;
+  float: left;
+  color: #828282;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+`
+
 export const SecBlock = styled.div`
   position: relative;
   width: 100%;
@@ -127,6 +140,18 @@ export const SecBlockText = styled.p`
     top: 90%;
     width: 70%;
     left: 10%;
+  }
+`
+export const SecBlockTextAddition = styled.p`
+  position: absolute;
+  left: 65%;
+  top: 0%;
+  font-size: 10pt;
+  width: 25%;
+  float: left;
+  color: #828282;
+  @media screen and (max-width: 700px) {
+    display: none;
   }
 `
 

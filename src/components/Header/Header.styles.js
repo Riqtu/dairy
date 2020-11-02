@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 
 import logoCircle from './../../assets/logo-circle.png'
+import menu from './../../assets/menuPh.svg'
 
 export const HeaderWrapper = styled.header`
   position: relative;
@@ -72,6 +73,35 @@ export const MenuButton = styled.button`
   &:hover {
     transform: scale(1.2) rotate(20deg);
   }
+
+  @media screen and (max-width: 700px) {
+    /* left: 0; */
+    top: 30px;
+    right: 30px;
+  }
+`
+
+export const MenuButtonPh = styled.button`
+  /* position: ${(props) => (props.active ? 'fixed' : 'absolute')}; */
+  position: fixed;
+  filter: invert(${(props) => (props.invert ? '1' : '0')});
+  background-color: blue;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  left: 30px;
+  right: auto;
+
+  top: 60px;
+  border: none;
+  background-color: transparent;
+  background-image: url('${menu}');
+  background-size: contain;
+  background-position: center;
+  transition: 0.3s;
+  outline: none;
+  z-index: 8 !important;
 
   @media screen and (max-width: 700px) {
     /* left: 0; */

@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderWrapper, Links, MenuButton } from './Header.styles'
+import { HeaderWrapper, Links, MenuButton, MenuButtonPh } from './Header.styles'
 
 import { Link } from 'react-router-dom'
 import Menu from '../Menu/Menu'
@@ -41,6 +41,16 @@ const Header = observer((props) => {
         }}
         active={mainStore.menuActive}
       ></MenuButton>
+      {window.screen.width < 700 && (
+        <MenuButtonPh
+          invert={props.invert}
+          onClick={() => {
+            mainStore.setMenuActive(!mainStore.menuActive)
+            console.log(mainStore.menuActive)
+          }}
+          active={mainStore.menuActive}
+        ></MenuButtonPh>
+      )}
       <Menu></Menu>
     </div>
   )

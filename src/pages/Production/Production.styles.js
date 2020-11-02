@@ -212,20 +212,46 @@ export const MasterWrapper = styled.div`
   width: 70%;
   left: 20%;
   margin-top: 170px;
+  @media screen and (max-width: 770px) {
+    margin-top: 170px;
+  }
 `
 export const MasterLogo = styled.img`
   position: absolute;
   width: 35%;
   left: 0;
+  @media screen and (max-width: 770px) {
+    margin-top: 70px;
+    left: -10%;
+    width: 43%;
+  }
 `
 export const MasterVlas = styled.img`
   position: absolute;
   width: 15%;
   left: -10%;
   top: 80%;
+  @media screen and (max-width: 770px) {
+    margin-top: 70px;
+    display: none;
+  }
 `
 export const MasterImg = styled.img`
   position: relative;
   margin-top: 100px;
   width: 100%;
+`
+export const AboutTextMaster = styled.p`
+  position: relative;
+  width: 30%;
+  opacity: 0.5;
+  margin-left: 50%;
+  font-size: 10pt;
+
+  @media screen and (max-width: 770px) {
+    width: 80%;
+    font-size: 8pt;
+    margin-left: 10%;
+    margin-top: 0px;
+  }
 `

@@ -6,6 +6,8 @@ import {
   ImgLast,
   Fork,
   Cheese,
+  Copy,
+  Lines,
 } from './MenuNew.styles'
 
 import menuRest from './../../assets/menu-rest.svg'
@@ -15,6 +17,8 @@ import boxes from './../../assets/boxes.svg'
 import contacts from './../../assets/contacts.svg'
 import fork from './../../assets/fork.png'
 import backch from './../../assets/chmenu.png'
+import copy from './../../assets/copy.svg'
+import lines from './../../assets/kaka.svg'
 
 import DelayLink from './../DelayLink'
 import { useStores } from './../../hooks/useStores'
@@ -35,6 +39,8 @@ const MenuNew = observer((props) => {
     <MenuNewWrapper active={true}>
       <Fork src={fork} alt=""></Fork>
       <Cheese src={backch} alt=""></Cheese>
+      <Copy src={copy}></Copy>
+      <Lines src={lines}></Lines>
 
       <Links active={active}>
         <li>

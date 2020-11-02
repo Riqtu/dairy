@@ -22,6 +22,8 @@ import {
   FourBlockText,
   Line,
   CheeseLogo,
+  FirstBlockTextAddition,
+  SecBlockTextAddition,
 } from './Cheese.styles'
 
 import line from './../../assets/chLine.svg'
@@ -57,6 +59,10 @@ const Cheese = (props) => {
           <FirstBlockText>
             Нагревание молока до очень высокой температуры.
           </FirstBlockText>
+          <FirstBlockTextAddition>
+            В зависимости от используемого молока сыр приобретает свои особенные
+            характеристики.
+          </FirstBlockTextAddition>
         </Fade>
       </FirstBlock>
       <SecBlock>
@@ -68,6 +74,9 @@ const Cheese = (props) => {
             Добавление закваски. Время свертывания влияет на формирование
             конечного продукта
           </SecBlockText>
+          <SecBlockTextAddition>
+            Так же происходт отделение сыворотки от твердой массы
+          </SecBlockTextAddition>
         </Fade>
       </SecBlock>
       <ThirdBlock>

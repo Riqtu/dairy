@@ -20,7 +20,7 @@ export const ContactsTextWrapper = styled.div`
     /* filter: invert(1); */
     filter: invert(0.4) sepia(1) saturate(1.1) hue-rotate(0deg) brightness(0.58);
 
-    margin: 50px 0 150px 0;
+    margin: 100px 0 100px 0;
   }
   @media screen and (max-width: 320px) {
     font-size: 30pt;

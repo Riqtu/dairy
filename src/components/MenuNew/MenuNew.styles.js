@@ -104,3 +104,23 @@ export const Cheese = styled.img`
     right: auto;
   }
 `
+
+export const Copy = styled.img`
+  position: absolute;
+  width: 2%;
+  top: 60%;
+  left: 5%;
+  @media screen and (max-width: 770px) {
+    display: none;
+  }
+`
+
+export const Lines = styled.img`
+  position: absolute;
+  width: 5%;
+  top: 55%;
+  left: 54%;
+  @media screen and (max-width: 770px) {
+    display: none;
+  }
+`

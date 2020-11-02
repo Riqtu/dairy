@@ -31,8 +31,9 @@ export const ReservationLogo = styled.img`
   margin-bottom: 120px;
   @media screen and (max-width: 770px) {
     width: 300px;
-    top: 250px;
+    top: 170px;
     margin-bottom: 140px;
+    opacity: 0;
   }
 `
 
@@ -238,6 +239,8 @@ export const NameInput = styled.input`
   /* padding-left: 20px; */
   outline: none;
   font-family: 'Uberschrift';
+  text-transform: uppercase !important;
+
   border-bottom: 1px solid black;
   line-height: normal;
   color: rgba(82, 72, 39, 1);
@@ -369,7 +372,7 @@ export const Submit = styled.button`
   transition: 0.3s;
   outline: none;
   &:hover {
-    transform: ${(props) => (props.sub ? '' : 'scale(1.2) rotate(-20deg)')};
+    transform: ${(props) => (props.sub ? '' : 'scale(1.06) rotate(-20deg)')};
   }
   transform: ${(props) => (props.sub ? 'scale(0.3) rotate(-120deg);' : '')};
 

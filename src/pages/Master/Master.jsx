@@ -36,7 +36,7 @@ const Master = (props) => {
       </Background>
       <Header invert></Header>
       <Logo page={2} invert isLoaded={isLoaded}></Logo>
-      <VideoBlockWrapper>
+      {/* <VideoBlockWrapper>
         <VideoBlockContainer>
           <Video
             loop="1"
@@ -48,7 +48,7 @@ const Master = (props) => {
             <source src={video} type="video/mp4" />
           </Video>
         </VideoBlockContainer>
-      </VideoBlockWrapper>
+      </VideoBlockWrapper> */}
       <InfoWrapper>
         <img src={img1} alt="" id="info1" />
         <img src={img2} alt="" id="info2" />

@@ -34,7 +34,7 @@ const Contacts = (props) => {
       </ContactsVideoWrapper> */}
       <ContactsTextWrapper>
         ROSTOV-NA-DONU <br /> SEMASHKO 51 <br />
-        <img src={logoCircle} alt="" /> <br /> 8 (863) 269-90-45
+        <img src={logoCircle} alt="" /> <br /> 8 (938) 151-21-14
       </ContactsTextWrapper>
       <ContactsLogo src={logo} alt=""></ContactsLogo>
     </ContactsWrapper>
