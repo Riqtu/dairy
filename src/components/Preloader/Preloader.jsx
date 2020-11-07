@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { PreloaderWrapper, Circle, Container } from './Preloader.styles'
-
+import Bowser from 'bowser'
 const Preloader = (props) => {
   const [disActive, setDisactive] = useState(false)
   const [progress, setProgress] = useState(0)
@@ -9,6 +9,9 @@ const Preloader = (props) => {
     const arr = [...document.body.getElementsByTagName('img')]
     const arrVideo = [...document.body.getElementsByTagName('video')]
     arr.concat(arrVideo)
+
+    const browser = Bowser.getParser(window.navigator.userAgent)
+    console.log('safari', browser.getBrowserName())
     let counter = 0
     arr.length !== 0
       ? arr.forEach((item) => {
@@ -25,6 +28,11 @@ const Preloader = (props) => {
           }
         })
       : setProgress(100)
+
+    console.log(browser.getBrowserName() === 'Safari')
+    setTimeout(() => {
+      browser.getBrowserName() === 'Safari' && setProgress(100)
+    }, 4000)
   }, [])
 
   useEffect(() => {

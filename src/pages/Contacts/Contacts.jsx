@@ -33,8 +33,17 @@ const Contacts = (props) => {
         </Video>
       </ContactsVideoWrapper> */}
       <ContactsTextWrapper>
-        ROSTOV-NA-DONU <br /> SEMASHKO 51 <br />
-        <img src={logoCircle} alt="" /> <br /> 8 (938) 151-21-14
+        РОСТОВ-НА-ДОНУ <br /> СЕМАШКО 51 <br />
+        <img src={logoCircle} alt="" /> <br /> 8 (938) 151-21-14 <br />
+        <a href="https://www.instagram.com/syrovarnya_vlasenko/">
+          INSTAGRAM
+        </a>{' '}
+        <br />
+        <b>
+          <a href="mailto:info@syrovarnya-vlasenko.com">
+            info@syrovarnya-vlasenko.com
+          </a>
+        </b>
       </ContactsTextWrapper>
       <ContactsLogo src={logo} alt=""></ContactsLogo>
     </ContactsWrapper>

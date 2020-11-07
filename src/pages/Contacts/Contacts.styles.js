@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const ContactsWrapper = styled.div`
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
 `
 
@@ -21,6 +21,14 @@ export const ContactsTextWrapper = styled.div`
     filter: invert(0.4) sepia(1) saturate(1.1) hue-rotate(0deg) brightness(0.58);
 
     margin: 100px 0 100px 0;
+  }
+  a {
+    text-decoration: none;
+    color: rgba(82, 72, 39, 1);
+  }
+  b {
+    font-size: 20pt;
+    font-weight: normal;
   }
   @media screen and (max-width: 320px) {
     font-size: 30pt;
