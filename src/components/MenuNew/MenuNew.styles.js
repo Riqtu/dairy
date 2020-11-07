@@ -4,7 +4,7 @@ export const MenuNewWrapper = styled.div`
   position: relative;
   width: 100vw;
   display: block;
-  min-height: 60vh;
+  min-height: 580px;
   /* height: 20vh; */
   /* background: linear-gradient(0deg, #f1f0ed 50%, rgba(255, 255, 255, 0) 100%); */
   transform: translateY(${(props) => (props.active ? '-50%' : '100%')});
@@ -17,6 +17,7 @@ export const MenuNewWrapper = styled.div`
   /* padding-top: 40vh; */
   @media screen and (max-width: 700px) {
     margin-top: 350px;
+    min-height: 280px;
   }
 `
 export const Links = styled.ul`
@@ -86,7 +87,7 @@ export const Fork = styled.img`
     left: auto;
     right: -25%;
     width: 80%;
-    top: -35%;
+    top: -55%;
   }
 `
 
@@ -114,6 +115,9 @@ export const Copy = styled.img`
   width: 2%;
   top: 60%;
   left: 8%;
+  @media screen and (max-width: 1366px) {
+    top: 50%;
+  }
   @media screen and (max-width: 770px) {
     display: none;
   }
@@ -124,6 +128,9 @@ export const Lines = styled.img`
   width: 5%;
   top: 82%;
   left: 48%;
+  @media screen and (max-width: 1366px) {
+    top: 68%;
+  }
   @media screen and (max-width: 770px) {
     display: none;
   }
