@@ -79,5 +79,8 @@ export const ImgLast = styled.img`
   @media screen and (max-width: 700px) {
     margin-top: 30px;
     width: ${(props) => props.w}%;
+    &:first-child {
+      width: ${(props) => props.w}%;
+    }
   }
 `

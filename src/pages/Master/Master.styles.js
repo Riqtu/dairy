@@ -56,6 +56,8 @@ export const InfoWrapper = styled.div`
     @media screen and (max-width: 770px) {
       margin-left: 0%;
       margin-top: 0;
+      top: 300px;
+
       width: 50%;
     }
   }
@@ -74,6 +76,12 @@ export const InfoWrapper = styled.div`
     width: 10%;
     left: 13%;
     top: 40%;
+    @media screen and (max-width: 770px) {
+      position: absolute;
+      width: 40%;
+      left: 5%;
+      top: 80%;
+    }
   }
 `
 export const InfoTextLeft = styled.p`
@@ -87,7 +95,7 @@ export const InfoTextLeft = styled.p`
     position: absolute;
     width: 13%;
     left: 18%;
-    top: 70%;
+    top: 27%;
     width: 40%;
     left: 5%;
     font-size: 10pt;
@@ -103,11 +111,11 @@ export const InfoTextRight = styled.p`
   font-size: 10pt;
   @media screen and (max-width: 770px) {
     position: absolute;
-    left: 51.5%;
+    left: 22%;
     /* right: 0; */
     top: auto;
-    bottom: 5%;
-    width: 40%;
-    font-size: 10pt;
+    bottom: 0%;
+    width: 70%;
+    font-size: 9pt;
   }
 `
