@@ -33,6 +33,7 @@ const Main = (props) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const { mainStore } = useStores()
   useUpdateLocation()
+
   return (
     <MainWrapper isLoaded={isLoaded}>
       <Preloader isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
