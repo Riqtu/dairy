@@ -75,9 +75,9 @@ const Menu = observer((props) => {
               onClick={() => checkHref('/boxes')}
               delay={2}
               duration={4}
-              w={40}
+              w={80}
               alt=""
-              margin={window.screen.width > 770 ? 10 : ''}
+              margin={window.screen.width > 770 ? 4 : ''}
               disable={mainStore.href === '/boxes'}
             />
           </DelayLink>
@@ -91,7 +91,7 @@ const Menu = observer((props) => {
               duration={3}
               w={50}
               alt=""
-              margin={window.screen.width > 770 ? 20 : ''}
+              margin={window.screen.width > 770 ? 10 : ''}
               disable={mainStore.href === '/contacts'}
             />
           </DelayLink>

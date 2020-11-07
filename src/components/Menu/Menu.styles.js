@@ -56,11 +56,15 @@ export const ImgLast = styled.img`
   position: relative;
   margin-left: ${(props) => props.margin}%;
   margin-top: 50px;
-  animation: topWaveImg ${(props) => props.duration}s ${(props) => props.delay}s
-    ease infinite alternate;
+  /* animation: topWaveImg ${(props) => props.duration}s ${(props) =>
+    props.delay}s
+    ease infinite alternate; */
   transition: 0.3s;
   /* opacity: ${(props) => (props.disable ? '0.5' : '1')}; */
   float: ${window.screen.width > 770 && 'left'};
+  &:first-child {
+    width: 38%;
+  }
   filter: ${(props) =>
     props.disable
       ? 'invert(0.6) sepia(1) saturate(11.3) hue-rotate(0deg) brightness(1)'
@@ -71,6 +75,7 @@ export const ImgLast = styled.img`
         ? ''
         : 'invert(0.6) sepia(1) saturate(11.3) hue-rotate(0deg) brightness(1)'};
   }
+
   @media screen and (max-width: 700px) {
     margin-top: 30px;
     width: ${(props) => props.w}%;
