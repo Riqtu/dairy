@@ -81,14 +81,27 @@ const MenuNew = observer((props) => {
               delay={2}
               duration={4}
               alt=""
-              top={window.screen.width > 770 ? 5 : -0.1}
+              top={window.screen.width > 770 ? -0.1 : -0.1}
               margin={window.screen.width > 770 ? 10 : 20}
-              width={window.screen.width > 770 ? 38 : 80}
+              width={window.screen.width > 770 ? 52 : 80}
               disable={mainStore.href === '/boxes'}
             />
           </DelayLink>
         </li>
         <li>
+          <DelayLink to="/master-class" delay={500}>
+            <ImgLast
+              src={master}
+              onClick={() => checkHref('/master-class')}
+              delay={1}
+              duration={5}
+              alt=""
+              top={window.screen.width > 770 ? 3 : 5}
+              margin={window.screen.width > 770 ? 4 : 24}
+              width={window.screen.width > 770 ? 35 : 70}
+              disable={mainStore.href === '/master-class'}
+            />
+          </DelayLink>
           <DelayLink to="/contacts" delay={500}>
             <ImgLast
               src={contacts}
@@ -96,24 +109,10 @@ const MenuNew = observer((props) => {
               delay={2}
               duration={3}
               alt=""
-              margin={window.screen.width > 770 ? 10 : 0}
-              top={window.screen.width > 770 ? 10 : 10}
-              width={window.screen.width > 770 ? 42 : 80}
+              margin={window.screen.width > 770 ? 16 : 0}
+              top={window.screen.width > 770 ? 3 : 10}
+              width={window.screen.width > 770 ? 35 : 80}
               disable={mainStore.href === '/contacts'}
-            />
-          </DelayLink>
-        </li>
-        <li>
-          <DelayLink to="/master-class" delay={500}>
-            <Img
-              src={master}
-              onClick={() => checkHref('/master-class')}
-              delay={1}
-              duration={5}
-              alt=""
-              margin={window.screen.width > 770 ? 30 : 20}
-              width={window.screen.width > 770 ? 50 : 70}
-              disable={mainStore.href === '/master-class'}
             />
           </DelayLink>
         </li>
