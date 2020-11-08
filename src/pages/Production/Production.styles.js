@@ -143,9 +143,9 @@ export const InfoWrapper = styled.div`
   position: relative;
   width: 100%;
   margin-top: 70px;
-  padding-left: 20%;
+  /* padding-left: 20%; */
   @media screen and (max-width: 770px) {
-    padding-bottom: 100px;
+    padding-bottom: -50px;
   }
 `
 export const Name = styled.img`
@@ -154,6 +154,9 @@ export const Name = styled.img`
   width: 40%;
   z-index: 3;
   top: 50px;
+  @media screen and (max-width: 770px) {
+    width: 90%;
+  }
 `
 export const SurName = styled.img`
   position: absolute;
@@ -253,5 +256,70 @@ export const AboutTextMaster = styled.p`
     font-size: 8pt;
     margin-left: 10%;
     margin-top: 0px;
+  }
+`
+
+export const Container = styled.div`
+  position: relative;
+  margin-top: 135px;
+  width: 100%;
+  outline: none !important;
+
+  min-height: 600px;
+
+  opacity: ${(props) => (props.flash ? 0 : 1)};
+  transition: 0.5s;
+  padding-bottom: 100px;
+  text-align: right;
+  @media screen and (max-width: 700px) {
+    text-align: center;
+    margin-top: 205px;
+    min-height: 0px;
+  }
+`
+export const LayerWrapper = styled.div`
+  position: relative;
+  z-index: 4;
+  opacity: ${(props) => props.opacity};
+  translate: 1.5s;
+  /* animation: topWaveImg ${(props) => props.duration}s ${(props) =>
+    props.delay}s
+    ease infinite alternate; */
+  @keyframes topWaveImg {
+    0% {
+      transform: 0;
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  /* transform: scale(${(props) => (props.swiped ? '0.5' : '1')}); */
+
+  animation: ${(props) => (props.swiped ? 'slider' : '')} 1.5s ease forwards;
+  @keyframes slider {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+`
+
+export const Layer = styled.img`
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  outline: none;
+  top: ${(props) => props.top}px;
+  z-index: 5;
+  translate: 1s;
+  /* width: ${(props) => (props.swiped ? '80%' : '90%')}; */
+
+  @media screen and (max-width: 700px) {
+    width: 90%;
   }
 `

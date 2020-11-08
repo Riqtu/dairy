@@ -16,11 +16,11 @@ function App() {
     if (mainStore.href !== href) mainStore.setHref(href)
   }, [mainStore])
 
-  useEffect(() => {
-    alert(
-      'Внимание! Бронирование столов и запись на мастер-классы в данный момент не поддерживается.'
-    )
-  }, [])
+  // useEffect(() => {
+  //   alert(
+  //     'Внимание! Бронирование столов и запись на мастер-классы в данный момент не поддерживается.'
+  //   )
+  // }, [])
   return (
     <div className="App">
       <Router>

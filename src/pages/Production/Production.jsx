@@ -20,7 +20,14 @@ import {
   MasterVlas,
   AboutTextMaster,
 } from './Production.styles'
-import { Logo, Header, Cheese, MasterForm, Preloader } from '../../components'
+import {
+  Logo,
+  Header,
+  Cheese,
+  MasterForm,
+  Preloader,
+  Photo,
+} from '../../components'
 import Slider from 'react-slick'
 import Fade from 'react-reveal/Fade'
 
@@ -30,10 +37,10 @@ import rest2 from './../../assets/gal3.png'
 
 import vlas from './../../assets/vlas.svg'
 import name from './../../assets/sirovarnya1.svg'
-import vlasenko from './../../assets/vlasenko3.svg'
-import inf1 from './../../assets/inf11.png'
-import inf2 from './../../assets/inf22.png'
-import inf3 from './../../assets/inf33.png'
+// import vlasenko from './../../assets/vlasenko3.svg'
+// import inf1 from './../../assets/inf11.png'
+// import inf2 from './../../assets/inf22.png'
+// import inf3 from './../../assets/inf33.png'
 
 import msk from './../../assets/msk1.png'
 import mskLogo from './../../assets/msklg.svg'
@@ -41,6 +48,7 @@ import mskLogo from './../../assets/msklg.svg'
 import arrow from './../../assets/Arrow.svg'
 // import { useStores } from './../../hooks/useStores'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
+import PhotoProd from '../../components/PhotoProd/PhotoProd'
 
 function SampleNextArrow(props) {
   const { onClick } = props
@@ -102,39 +110,8 @@ const Production = (props) => {
       <InfoWrapper>
         <Fade bottom cascade>
           <Name src={name} alt=""></Name>
-          <SurName src={vlasenko} alt=""></SurName>
         </Fade>
-        <InfoImg
-          src={inf1}
-          alt=""
-          zind={2}
-          duration={Math.random() * (4 - 2) + 2}
-          delay={Math.floor(Math.random() * 1)}
-        ></InfoImg>
-        <InfoImg
-          src={inf2}
-          alt=""
-          margin={100}
-          zind={0}
-          duration={Math.random() * (4 - 2) + 2}
-          delay={Math.floor(Math.random() * 1)}
-        ></InfoImg>
-        <InfoImg
-          w="35"
-          src={inf3}
-          alt=""
-          zind={2}
-          duration={Math.random() * (4 - 2) + 2}
-          delay={Math.floor(Math.random() * 1)}
-        ></InfoImg>
-        <Fade bottom cascade>
-          <InfoText>
-            Мы готовим молодые рассольные, полутвердые, мягкие с плесенью, а
-            также твердые выдержанные сыры, используя полюбившиеся во всем мире
-            итальянские и французские рецептуры, и, конечно, авторские,
-            родившиеся методом проб и ошибок.
-          </InfoText>
-        </Fade>
+        <PhotoProd></PhotoProd>
       </InfoWrapper>
       {window.screen.width > 700 && <Cheese></Cheese>}
       <MasterWrapper>

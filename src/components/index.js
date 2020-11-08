@@ -1,4 +1,5 @@
 /*APPEND COMPONENT IMPORT HERE*/
+import PhotoProd from './PhotoProd'
 import MenuNew from './MenuNew'
 import Preloader from './Preloader'
 import MasterForm from './MasterForm'
@@ -13,6 +14,7 @@ import Header from './Header'
 
 export {
     /*APPEND COMPONENT EXPORT HERE*/
+  PhotoProd,
   MenuNew,
   Preloader,
   MasterForm,
