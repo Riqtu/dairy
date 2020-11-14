@@ -115,6 +115,9 @@ export const Copy = styled.img`
   width: 2%;
   top: 60%;
   left: 8%;
+  @media screen and (max-width: 1440px) {
+    top: 50%;
+  }
   @media screen and (max-width: 1366px) {
     top: 50%;
   }
@@ -128,6 +131,9 @@ export const Lines = styled.img`
   width: 5%;
   top: 82%;
   left: 48%;
+  @media screen and (max-width: 1440px) {
+    top: 68%;
+  }
   @media screen and (max-width: 1366px) {
     top: 68%;
   }

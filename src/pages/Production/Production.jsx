@@ -11,9 +11,9 @@ import {
   AboutLogo,
   InfoWrapper,
   Name,
-  SurName,
-  InfoImg,
-  InfoText,
+  // SurName,
+  // InfoImg,
+  // InfoText,
   MasterImg,
   MasterWrapper,
   MasterLogo,
@@ -26,7 +26,7 @@ import {
   Cheese,
   MasterForm,
   Preloader,
-  Photo,
+  // Photo,
 } from '../../components'
 import Slider from 'react-slick'
 import Fade from 'react-reveal/Fade'

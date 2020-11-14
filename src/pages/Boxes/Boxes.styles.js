@@ -137,8 +137,8 @@ export const SliderTitle = styled.div`
   top: auto;
   bottom: 0;
   text-align: center;
-  width: 40%;
-  margin-left: 30%;
+  width: 100%;
+  margin-left: 0%;
   margin-top: 40px;
   opacity: ${(props) => (props.swiped ? 0 : 1)};
   transition: 0.3s;
@@ -147,9 +147,16 @@ export const SliderTitle = styled.div`
     font-style: normal;
     font-weight: normal;
     font-size: 35pt;
+    width: 100%;
+    b {
+      font-weight: normal;
+      font-size: 20pt;
+    }
   }
   p {
-    margin-top: -15px;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: -20px;
     color: #828282;
     font-size: 10pt;
   }
@@ -162,8 +169,12 @@ export const SliderTitle = styled.div`
     h1 {
       font-size: 25pt;
     }
-    width: 80%;
-    margin-left: 10%;
+    p {
+      width: 80%;
+      margin-left: 10%;
+    }
+    /* width: 80%; */
+    /* margin-left: 10%; */
     margin-top: 0%;
   }
 `

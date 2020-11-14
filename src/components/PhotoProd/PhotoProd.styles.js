@@ -106,8 +106,8 @@ export const EmptyLayer = styled.div`
 `
 export const Layer = styled.img`
   position: relative;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   outline: none;
   top: ${(props) => props.top}px;
   z-index: 5;
@@ -115,7 +115,7 @@ export const Layer = styled.img`
   /* width: ${(props) => (props.swiped ? '80%' : '90%')}; */
 
   @media screen and (max-width: 700px) {
-    width: 80%;
+    width: 90%;
   }
 `
 export const Date = styled.img`

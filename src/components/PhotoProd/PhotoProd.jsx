@@ -10,10 +10,23 @@ import {
 } from './PhotoProd.styles'
 
 // import logo from './../../assets/pectopah.svg'
-import rest1 from './../../assets/photoProd/p2.png'
-import rest2 from './../../assets/photoProd/p1.png'
-import rest3 from './../../assets/photoProd/p3.png'
-
+import p1 from './../../assets/proizPhoto/p1.jpg'
+import p2 from './../../assets/proizPhoto/p2.jpg'
+import p3 from './../../assets/proizPhoto/p3.jpg'
+import p4 from './../../assets/proizPhoto/p4.jpg'
+import p5 from './../../assets/proizPhoto/p5.jpg'
+import p6 from './../../assets/proizPhoto/p6.jpg'
+import p7 from './../../assets/proizPhoto/p7.jpg'
+import p8 from './../../assets/proizPhoto/p8.jpg'
+import p9 from './../../assets/proizPhoto/p9.jpg'
+import p10 from './../../assets/proizPhoto/p10.jpg'
+import p11 from './../../assets/proizPhoto/p11.jpg'
+import p12 from './../../assets/proizPhoto/p12.jpg'
+import p13 from './../../assets/proizPhoto/p13.jpg'
+import p14 from './../../assets/proizPhoto/p14.jpg'
+import p15 from './../../assets/proizPhoto/p15.jpg'
+import p16 from './../../assets/proizPhoto/p16.jpg'
+import p17 from './../../assets/proizPhoto/p17.jpg'
 // import date from './../../assets/date.svg'
 import arrow from './../../assets/Arrow.svg'
 import arrowPrev from './../../assets/Arrow2.svg'
@@ -62,28 +75,72 @@ const PhotoProd = (props) => {
 
   const arr = [
     {
-      img: rest1,
+      img: p1,
       top: 0,
     },
     {
-      img: rest2,
+      img: p2,
       top: 30,
     },
     {
-      img: rest3,
+      img: p3,
       top: -10,
     },
     {
-      img: rest1,
+      img: p4,
       top: 0,
     },
     {
-      img: rest2,
+      img: p5,
       top: 30,
     },
     {
-      img: rest3,
+      img: p6,
       top: -10,
+    },
+    {
+      img: p7,
+      top: 0,
+    },
+    {
+      img: p8,
+      top: 30,
+    },
+    {
+      img: p9,
+      top: -10,
+    },
+    {
+      img: p10,
+      top: 0,
+    },
+    {
+      img: p11,
+      top: 30,
+    },
+    {
+      img: p12,
+      top: -10,
+    },
+    {
+      img: p13,
+      top: 0,
+    },
+    {
+      img: p14,
+      top: 30,
+    },
+    {
+      img: p15,
+      top: -10,
+    },
+    {
+      img: p16,
+      top: 0,
+    },
+    {
+      img: p17,
+      top: 30,
     },
   ]
   const layers = arr.map((el, index) => {

@@ -18,7 +18,9 @@ import contacts from './../../assets/contacts.svg'
 import fork from './../../assets/fork.png'
 import backch from './../../assets/chmenu.png'
 import copy from './../../assets/copy.svg'
+import menurest from './../../assets/menurest.svg'
 import lines from './../../assets/kaka.svg'
+import pdf from './../../assets/menu.pdf'
 
 import DelayLink from './../DelayLink'
 import { useStores } from './../../hooks/useStores'
@@ -115,6 +117,25 @@ const MenuNew = observer((props) => {
               disable={mainStore.href === '/contacts'}
             />
           </DelayLink>
+          <a
+            href={pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            // delay={500}
+            // onClick={() => window.open('./../../assets/menu.pdf')}
+          >
+            <ImgLast
+              src={menurest}
+              onClick={() => checkHref('/')}
+              delay={2}
+              duration={3}
+              alt=""
+              margin={window.screen.width > 770 ? 30 : 5}
+              top={window.screen.width > 770 ? 3 : 10}
+              width={window.screen.width > 770 ? 35 : 80}
+              disable={mainStore.href === '/contacts'}
+            />
+          </a>
         </li>
       </Links>
     </MenuNewWrapper>
