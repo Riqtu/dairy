@@ -121,6 +121,9 @@ export const Copy = styled.img`
   @media screen and (max-width: 1366px) {
     top: 50%;
   }
+  @media screen and (max-width: 1250px) {
+    top: 40%;
+  }
   @media screen and (max-width: 770px) {
     display: none;
   }
@@ -131,11 +134,20 @@ export const Lines = styled.img`
   width: 5%;
   top: 82%;
   left: 48%;
-  @media screen and (max-width: 1440px) {
+  @media screen and (max-width: 1540px) {
     top: 68%;
   }
   @media screen and (max-width: 1366px) {
     top: 68%;
+  }
+  @media screen and (max-width: 1270px) {
+    top: 58%;
+  }
+  @media screen and (max-width: 1110px) {
+    top: 52%;
+  }
+  @media screen and (max-width: 940px) {
+    top: 45%;
   }
   @media screen and (max-width: 770px) {
     display: none;
