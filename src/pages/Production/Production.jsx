@@ -114,11 +114,13 @@ const Production = (props) => {
         <PhotoProd></PhotoProd>
       </InfoWrapper>
       {window.screen.width > 700 && <Cheese></Cheese>}
-      <MasterWrapper>
-        <MasterImg src={msk} alt=""></MasterImg>
-        <MasterLogo src={mskLogo} alt=""></MasterLogo>
-        <MasterVlas src={vlas} alt=""></MasterVlas>
-      </MasterWrapper>
+      {window.screen.width > 700 && (
+        <MasterWrapper>
+          <MasterImg src={msk} alt=""></MasterImg>
+          <MasterLogo src={mskLogo} alt=""></MasterLogo>
+          <MasterVlas src={vlas} alt=""></MasterVlas>
+        </MasterWrapper>
+      )}
       <AboutWrapper>
         <Fade bottom>
           <AboutTextMaster>
@@ -128,6 +130,13 @@ const Production = (props) => {
           </AboutTextMaster>
         </Fade>
       </AboutWrapper>
+      {window.screen.width < 700 && (
+        <MasterWrapper>
+          <MasterImg src={msk} alt=""></MasterImg>
+          <MasterLogo src={mskLogo} alt=""></MasterLogo>
+          <MasterVlas src={vlas} alt=""></MasterVlas>
+        </MasterWrapper>
+      )}
       <MasterForm></MasterForm>
     </ProductionWrapper>
   )

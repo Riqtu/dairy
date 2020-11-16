@@ -30,7 +30,7 @@ export const VideoBlockContainer = styled.div`
   width: 80%;
   height: 600px;
   @media screen and (max-width: 770px) {
-    height: 200px;
+    height: 150px;
   }
 `
 export const Video = styled.video`
@@ -47,6 +47,8 @@ export const InfoWrapper = styled.div`
   @media screen and (max-width: 770px) {
     padding: 0;
     padding-bottom: 200px;
+    margin-top: -100px;
+    background-color: transparent;
   }
   #info1 {
     position: relative;

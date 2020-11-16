@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import {
   MasterWrapper,
-  Background,
-  BackgroundVideo,
-  // VideoBlockWrapper,
-  // VideoBlockContainer,
-  // Video,
+  // Background,
+  // BackgroundVideo,
+  VideoBlockWrapper,
+  VideoBlockContainer,
+  Video,
   InfoWrapper,
   InfoTextRight,
   InfoTextLeft,
@@ -23,7 +23,7 @@ const Master = (props) => {
   return (
     <MasterWrapper>
       <Preloader isLoaded={isLoaded} setIsLoaded={setIsLoaded} />
-      <Background>
+      {/* <Background>
         <BackgroundVideo
           loop="1"
           muted="1"
@@ -33,10 +33,10 @@ const Master = (props) => {
         >
           <source src={video} type="video/mp4" />
         </BackgroundVideo>
-      </Background>
-      <Header invert></Header>
+      </Background> */}
+      <Header></Header>
       <Logo page={2} invert isLoaded={isLoaded}></Logo>
-      {/* <VideoBlockWrapper>
+      <VideoBlockWrapper>
         <VideoBlockContainer>
           <Video
             loop="1"
@@ -48,7 +48,7 @@ const Master = (props) => {
             <source src={video} type="video/mp4" />
           </Video>
         </VideoBlockContainer>
-      </VideoBlockWrapper> */}
+      </VideoBlockWrapper>
       <InfoWrapper>
         <img src={img1} alt="" id="info1" />
         <img src={img2} alt="" id="info2" />

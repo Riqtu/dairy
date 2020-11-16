@@ -12,6 +12,7 @@ export const MasterFormWrapper = styled.div`
     padding-top: 0;
     margin-bottom: 100px;
     padding-bottom: 0;
+    /* height: 200px; */
   }
 `
 export const BigImage = styled.img`
@@ -380,13 +381,15 @@ export const Submit = styled.button`
     img {
       width: 150px;
     }
+    margin-top: 50px;
+    left: 10%;
   }
   @media screen and (max-width: 1240px) {
     img {
       width: 130px;
     }
-    left: 0;
-    margin-top: 60%;
+    /* left: 0; */
+    /* margin-top: 60%; */
   }
   @media screen and (max-width: 770px) {
     img {

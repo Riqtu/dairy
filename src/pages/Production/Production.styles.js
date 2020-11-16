@@ -93,6 +93,7 @@ export const AboutWrapper = styled.div`
   padding: 40px;
   @media screen and (max-width: 770px) {
     padding: 0;
+    height: auto;
   }
 `
 export const AboutText = styled.p`
@@ -216,7 +217,7 @@ export const MasterWrapper = styled.div`
   left: 20%;
   margin-top: 170px;
   @media screen and (max-width: 770px) {
-    margin-top: 170px;
+    margin-top: 20px;
   }
 `
 export const MasterLogo = styled.img`

@@ -152,8 +152,8 @@ export const Button = styled.button`
       translateX(${(props) => (props.prev ? '-5px' : '5px')});
   }
   @media screen and (max-width: 700px) {
-    right: ${(props) => (props.prev ? '55%' : '35%')};
+    right: ${(props) => (props.prev ? '75%' : '45%')};
     bottom: -40px;
-    display: none;
+    /* display: none; */
   }
 `
