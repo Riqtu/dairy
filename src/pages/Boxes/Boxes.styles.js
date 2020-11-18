@@ -131,6 +131,13 @@ export const Circle = styled.div`
   @media screen and (min-height: 700px) {
     top: 18%;
   }
+  @media screen and (max-height: 665px) {
+    top: 18%;
+    width: 16rem;
+    height: 16rem;
+    left: calc(50% - 8rem);
+    top: calc(50% - 9rem);
+  }
 `
 export const SliderTitle = styled.div`
   position: absolute;

@@ -9,7 +9,7 @@ export const MasterFormWrapper = styled.div`
   background-color: #f1f0ed;
 
   @media screen and (max-width: 770px) {
-    padding-top: 0;
+    padding-top: 70px;
     margin-bottom: 100px;
     padding-bottom: 0;
     /* height: 200px; */

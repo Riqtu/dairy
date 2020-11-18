@@ -157,6 +157,7 @@ export const Name = styled.img`
   top: 50px;
   @media screen and (max-width: 770px) {
     width: 90%;
+    top: 170px;
   }
 `
 export const SurName = styled.img`

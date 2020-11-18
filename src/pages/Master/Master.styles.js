@@ -22,8 +22,10 @@ export const BackgroundVideo = styled.video`
 export const VideoBlockWrapper = styled.div`
   position: relative;
   width: 100%;
-  background-color: #f1f0ed;
+  /* background-color: #f1f0ed; */
   padding: 5% 10%;
+  padding-top: 0;
+  /* margin-bottom: -150px; */
 `
 export const VideoBlockContainer = styled.div`
   position: relative;
@@ -58,7 +60,7 @@ export const InfoWrapper = styled.div`
     @media screen and (max-width: 770px) {
       margin-left: 0%;
       margin-top: 0;
-      top: 300px;
+      top: 320px;
 
       width: 50%;
     }
@@ -69,7 +71,7 @@ export const InfoWrapper = styled.div`
     margin-left: 5%;
     @media screen and (max-width: 770px) {
       margin-left: 55%;
-      margin-top: 0;
+      margin-top: 100px;
       width: 40%;
     }
   }
@@ -119,5 +121,35 @@ export const InfoTextRight = styled.p`
     bottom: 0%;
     width: 70%;
     font-size: 9pt;
+  }
+`
+
+export const LogoWrapper = styled.div`
+  position: relative;
+  /* min-height: 50vh; */
+  width: 100%;
+  margin-top: -130px;
+  transition: 1s;
+  margin-bottom: -10%;
+
+  /* @media screen and (max-width: 1024px) {
+    min-height: 35vh;
+  }
+  @media screen and (max-width: 770px) {
+    min-height: 30vh;
+  } */
+`
+
+export const ReImageLayer = styled.img`
+  position: relative;
+  left: 5%;
+  width: 92%;
+  transition: 1.8s;
+  opacity: 1;
+  top: auto;
+  @media screen and (max-width: 770px) {
+    transition: 1.8s;
+    left: 0%;
+    width: 100%;
   }
 `

@@ -9,13 +9,16 @@ import {
   InfoWrapper,
   InfoTextRight,
   InfoTextLeft,
+  LogoWrapper,
+  ReImageLayer,
 } from './Master.styles'
-import { Logo, Header, Preloader, MasterForm } from './../../components'
+import { Header, Preloader, MasterForm } from './../../components'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
 import video from './../../assets/video/dair.mp4'
 import img1 from './../../assets/rest1.png'
 import img2 from './../../assets/ms1.png'
 import fr from './../../assets/fr.svg'
+import master2 from './../../assets/master2.svg'
 
 const Master = (props) => {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -35,7 +38,14 @@ const Master = (props) => {
         </BackgroundVideo>
       </Background> */}
       <Header></Header>
-      <Logo page={2} invert isLoaded={isLoaded}></Logo>
+      <LogoWrapper>
+        <ReImageLayer
+          src={master2}
+          margin={props.page === 1 ? '-30' : '-20'}
+          alt="Власенко"
+          isLoaded={props.isLoaded}
+        ></ReImageLayer>
+      </LogoWrapper>
       <VideoBlockWrapper>
         <VideoBlockContainer>
           <Video

@@ -153,7 +153,7 @@ export const Button = styled.button`
   }
   @media screen and (max-width: 700px) {
     right: ${(props) => (props.prev ? '75%' : '45%')};
-    bottom: -40px;
+    bottom: -70px;
     /* display: none; */
   }
 `
