@@ -32,7 +32,7 @@ const MasterForm = (props) => {
           style={{ display: 'none' }}
         ></iframe>
         <Form
-          action="https://formspree.io/f/mvovkgpz"
+          action="https://formspree.io/f/xaylddwp"
           method="POST"
           target="formPost"
         >

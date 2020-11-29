@@ -46,7 +46,7 @@ const Reservation = (props) => {
         <ReservationLogo src={reservation} alt="Картинка"></ReservationLogo>
         <Fork src={fork} alt=""></Fork>
         <Form
-          action="https://formspree.io/f/mvovkgpz"
+          action="https://formspree.io/f/xaylddwp"
           method="POST"
           target="formPost"
         >
@@ -118,7 +118,7 @@ const Reservation = (props) => {
               <PhoneInput disableUnderline />
             </InputMask>
           </Phone>
-          <Submit>
+          <Submit type="submit">
             <img
               src={sub ? submitOk : submit}
               sub={sub}
