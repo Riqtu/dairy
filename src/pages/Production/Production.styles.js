@@ -146,17 +146,51 @@ export const InfoWrapper = styled.div`
   margin-top: 70px;
   /* padding-left: 20%; */
   @media screen and (max-width: 770px) {
-    padding-bottom: -50px;
+    padding-bottom: 50px;
+  }
+`
+
+export const LinkWrapper = styled.div`
+  text-align: center;
+  a {
+    position: relative;
+    /* border-radius: 10px; */
+    margin: 40px 0;
+    padding: 2% 6%;
+    text-decoration: none;
+    border: 1px solid #9e9987;
+    font-family: 'Uberschrift', sans-serif;
+    color: #9e9987;
+    font-size: 40px;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+      background-color: #9e9987;
+    }
+
+    @media screen and (max-width: 770px) {
+      padding: 4% 8%;
+
+      font-size: 25px;
+      top: 70px;
+      left: 35px;
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    text-align: left;
   }
 `
 export const Name = styled.img`
   position: absolute;
   left: 0;
-  width: 40%;
+  width: 50%;
   z-index: 3;
   top: 50px;
+  left: calc(50% - 25%);
   @media screen and (max-width: 770px) {
     width: 90%;
+    left: 5%;
     top: 170px;
   }
 `
@@ -254,7 +288,7 @@ export const AboutTextMaster = styled.p`
   font-size: 10pt;
 
   @media screen and (max-width: 770px) {
-    width: 80%;
+    width: 67%;
     font-size: 8pt;
     margin-left: 10%;
     margin-top: 0px;

@@ -237,6 +237,7 @@ export const NameInput = styled.input`
   font-family: 'Uberschrift';
   text-transform: uppercase !important;
   border-bottom: 1px solid black;
+  /* text-decoration: underline; */
   line-height: normal;
   color: rgba(82, 72, 39, 1);
 

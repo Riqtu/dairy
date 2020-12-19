@@ -32,7 +32,7 @@ const Preloader = (props) => {
     console.log(browser.getBrowserName() === 'Safari')
     setTimeout(() => {
       browser.getBrowserName() === 'Safari' && setProgress(100)
-    }, 4000)
+    }, 3500)
   }, [])
 
   useEffect(() => {

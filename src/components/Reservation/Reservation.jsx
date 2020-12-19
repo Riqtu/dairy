@@ -89,10 +89,10 @@ const Reservation = (props) => {
             </InputMask>
           </Date>
           <Name len={name.length}>
-            <label>Имя</label>
+            {/* <label>Имя</label> */}
             <NameInput
               type="text"
-              placeholder="IVANOV"
+              placeholder="Имя"
               value={name}
               name="Имя"
               onChange={(e) => {

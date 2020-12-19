@@ -19,6 +19,7 @@ import {
   MasterLogo,
   MasterVlas,
   AboutTextMaster,
+  LinkWrapper,
 } from './Production.styles'
 import {
   Logo,
@@ -36,7 +37,7 @@ import rest1 from './../../assets/gal2.jpeg'
 import rest2 from './../../assets/gal3.png'
 
 import vlas from './../../assets/vlas.svg'
-import name from './../../assets/sirovarnya1.svg'
+import name from './../../assets/syr3.svg'
 // import vlasenko from './../../assets/vlasenko3.svg'
 // import inf1 from './../../assets/inf11.png'
 // import inf2 from './../../assets/inf22.png'
@@ -49,6 +50,8 @@ import arrow from './../../assets/Arrow.svg'
 // import { useStores } from './../../hooks/useStores'
 import { useUpdateLocation } from '../../hooks/useUpdateLocation'
 import PhotoProd from '../../components/PhotoProd/PhotoProd'
+
+import pdf from './../../assets/cheeses.pdf'
 
 function SampleNextArrow(props) {
   const { onClick } = props
@@ -112,6 +115,13 @@ const Production = (props) => {
           <Name src={name} alt=""></Name>
         </Fade>
         <PhotoProd></PhotoProd>
+        <Fade bottom cascade>
+          <LinkWrapper>
+            <a href={pdf} target="_blank" rel="noopener noreferrer">
+              ПОСМОТРЕТЬ ВСЕ
+            </a>
+          </LinkWrapper>
+        </Fade>
       </InfoWrapper>
       {window.screen.width > 700 && <Cheese></Cheese>}
       {window.screen.width > 700 && (
