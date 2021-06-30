@@ -75,11 +75,11 @@ const Reservation = (props) => {
           <Date>
             <label>Когда</label>
             <InputMask
-              mask="99.99/20"
+              mask="99.99/21"
               type="text"
               name="Дата"
-              placeholder="25.08/20"
-              maskPlaceholder="25.08/20"
+              placeholder="25.08/21"
+              maskPlaceholder="25.08/21"
               value={date}
               onChange={(e) => {
                 setDate(e.target.value)
