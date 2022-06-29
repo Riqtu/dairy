@@ -20,7 +20,7 @@ import backch from './../../assets/chmenu.png'
 import copy from './../../assets/copy.svg'
 import menurest from './../../assets/menurest.svg'
 import lines from './../../assets/kaka.svg'
-import pdf from './../../assets/menuJune.pdf'
+import pdf from './../../assets/menu2022.pdf'
 
 import DelayLink from './../DelayLink'
 import { useStores } from './../../hooks/useStores'
